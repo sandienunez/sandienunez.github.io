@@ -1,11 +1,11 @@
 # Site settings
 author: Sandie Nunez
-title: 
+title: Sandie Soars
 header-img: img/home-bg.png
 email: snunez@vt.edu
 copyright_name: Sandie Nunez
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A Journey from Biologist to Coder
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  sandienunez
