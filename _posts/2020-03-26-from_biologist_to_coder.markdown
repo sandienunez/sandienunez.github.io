@@ -5,8 +5,7 @@ date:       2020-03-26 13:21:03 -0400
 permalink:  from_biologist_to_coder
 ---
 
-
-
+![](https://imgur.com/HCDzPIK)
 
 
 
