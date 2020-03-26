@@ -29,7 +29,8 @@ I remember reading an article that said that to be a better coder, you should at
 
 VTHacks is an MLH (Major League Hackers) Hackathon where students from different universities come together to spend 36 hours working in teams to create and build a project they are passionate about. By the end of VT Hacks 7, I won two awards at the awards ceremony. I won the Major League Hackers award and the VTHacks Social Media award. I also had the honor to demo my first real coding project to a panel of judges called #adulting. A (fin-tech) personally curated finance app for millennials to dominate their money management and work towards a debt free life. #adulting offers simple breakdown videos of financial concepts, such as what is a 401k and how to fill out a tax return. You get a customized feed of financial topics and advice on the financial education you personally need one touch away!
 
-https://sandienunez.github.io/adulting/
+[https://sandienunez.github.io/adulting/
+
 
 Attending this Hackathon gave me the opportunity to be surrounded by people who love coding. This experience also made me realize that I love coding. I look forward to creating more inspiring projects that help others and make them smile!
 
