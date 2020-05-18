@@ -54,7 +54,7 @@ Some notes I considered when building my Meal class were as follows:
 
 
 
-I created a bin folder which had my executable file I called “run” that was the command most called in my project because it runs your entire program. I also had a library directory which had a meals folder that held my Api class, my Cli class, my Ingredient, my Meal class and environment.rb class. I also had to follow steps to hide my api key before I published it to my github repository, by making an .env file that stored my personal spoonacular key. The reason why it is important to hide your key is for protection and security purposes, so that no one can ever get access to your key and turn off your own access to your program. This link walks you through step by step on how to hide your API key. (http://dev.to/kcarrel/major-key-alert-hide-your-api-keys-l4c)
+I created a bin folder which had my executable file I called “run” that was the command most called in my project because it runs your entire program. I also had a library directory which had a meals folder that held my Api class, my Cli class, my Ingredient, my Meal class and environment.rb class. I also had to follow steps to hide my api key before I published it to my github repository, by making an .env file that stored my personal spoonacular key. The reason why it is important to hide your key is for protection and security purposes, so that no one can ever get access to your key and turn off your own access to your program. This link walks you through step by step on how to hide your API key. []`(http://dev.to/kcarrel/major-key-alert-hide-your-api-keys-l4c)`   
 
 
 
