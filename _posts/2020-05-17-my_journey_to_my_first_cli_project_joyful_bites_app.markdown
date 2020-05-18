@@ -42,12 +42,7 @@ Some questions I considered when building my Api Class and self.get_meals class 
 
 The hardest part to decode was how to best set up my Api class. This Api class would get my information and return back the information to the user. I found making this Api class to be challenging because I had to use two data Api endpoints to retrieve back the information I needed for my user and parse through the ingredients array and the analyzed instructions array. My strings of information needed were stored in an array of hashes. This proved to be a challenging and tedious task but was very fun to use methods such as first, map, flatten, bang operators, if conditionals needed to get back the ingredients and recipe instructions to move the project forward. 
 
-` 
-class Api
-    def self.get_meals(ingredient)
-        key = ENV.fetch('SPOONACULAR_API_KEY')
-        url = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=#{ingredient}&apiKey=#{key}"
-        response = Net::HTTP.get(URI(url)) #namespace class `
+
    
         meals = JSON.parse(response)
 
@@ -63,9 +58,7 @@ class Api
         end
     end `
 
-`def self.get_meal_details(meal_object)
-            response = Net::HTTP.get(URI(meal_object.url)) #namespace class
-            recipe = JSON.parse(response)
+
          
 
             if recipe != []
@@ -95,7 +88,7 @@ class Api
             end
         end  `
 
-I really I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. It is essential you start getting comfortable with binding.pry as you progress through this Flatiron program and beyond. 
+I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. It is essential you start getting comfortable with binding.pry as you progress through this Flatiron program and beyond. 
 
 `[3] pry(Api)> response
 => "[{\"name\":\"\",\"steps\":[{\"number\":1,\"step\":\"In large resealable food-storage plastic bag, mix 2 cups of the apple juice, 1/2 cup brown sugar and the salt.\",\"ingredients\":[{\"id\":9016,\"name\":\"apple juice\",\"image\":\"apple-juice.jpg\"},{\"id\":19334,\"name\":\"brown sugar\",\"image\":\"dark-brown-sugar.png\"},{\"id\":2047,\"name\":\"salt\",\"image\":\"salt.jpg\"}],\"equipment\":[{\"id\":221671,\"name\":\"ziploc bags\",\"image\":\"plastic-bag.jpg\"}]},{\"number\":2,\"step\":\"Add pork chops; seal bag. Refrigerate 8 hours, turning bag occasionally.\",\"ingredients\":[{\"id\":10010062,\"name\":\"pork chops\",\"image\":\"pork-chops.jpg\"}],\"equipment\":[]},{\"number\":3,\"step\":\"Drain pork chops, discarding marinade. Pat pork dry; sprinkle with 1/4 teaspoon of the pepper. In 12-inch nonstick skillet, heat oil over medium-high heat.\",\"ingredients\":[{\"id\":10010062,\"name\":\"pork chops\",\"image\":\"pork-chops.jpg\"},{\"id\":1002030,\"name\":\"pepper\",\"image\":\"pepper.jpg\"}],\"equipment\":[{\"id\":404645,\"name\":\"frying pan\",\"image\":\"pan.png\"}]},{\"number\":4,\"step\":\"Add pork chops; cook 3 minutes on each side. Reduce heat to medium-low; cook 1 to 2 minutes longer on each side or until pork is no longer pink in center.\",\"ingredients\":[{\"id\":10010062,\"name\":\"pork chops\",\"image\":\"pork-chops.jpg\"}],\"equipment\":[],\"length\":{\"number\":4,\"unit\":\"minutes\"}},{\"number\":5,\"step\":\"Remove pork chops from skillet; cover to keep warm.\",\"ingredients\":[{\"id\":10010062,\"name\":\"pork chops\",\"image\":\"pork-chops.jpg\"}],\"equipment\":[{\"id\":404645,\"name\":\"frying pan\",\"image\":\"pan.png\"}]},{\"number\":6,\"step\":\"Add apples to skillet; cook 4 minutes, stirring frequently, until lightly browned.\",\"ingredients\":[{\"id\":9003,\"name\":\"apple\",\"image\":\"apple.jpg\"}],\"equipment\":[{\"id\":404645,\"name\":\"frying pan\",\"image\":\"pan.png\"}],\"length\":{\"number\":4,\"unit\":\"minutes\"}},{\"number\":7,\"step\":\"Add 1 tablespoon brown sugar, the sage and remaining 1/2 cup apple juice and 1/4 teaspoon pepper. Increase heat to medium-high; cook 3 minutes or until apples are soft. Spoon apples over pork chops.\",\"ingredients\":[{\"id\":9016,\"name\":\"apple juice\",\"image\":\"apple-juice.jpg\"},{\"id\":19334,\"name\":\"brown sugar\",\"image\":\"dark-brown-sugar.png\"},{\"id\":10010062,\"name\":\"pork chops\",\"image\":\"pork-chops.jpg\"},{\"id\":9003,\"name\":\"apple\",\"image\":\"apple.jpg\"},{\"id\":1002030,\"name\":\"pepper\",\"image\":\"pepper.jpg\"}],\"equipment\":[],\"length\":{\"number\":3,\"unit\":\"minutes\"}}]}]"  `
