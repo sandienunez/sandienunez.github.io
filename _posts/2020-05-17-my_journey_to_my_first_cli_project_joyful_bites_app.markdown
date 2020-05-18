@@ -56,7 +56,7 @@ The hardest part to decode was how to best set up my Api class. This Api class w
              new_meal.url=url 
             new_ingredient.meals << new_meal 
         end
-    end `
+    end 
 
 
          
@@ -133,7 +133,7 @@ I also recommend keeping a running list of all the times your program hits an er
 * 9. Make sure to move, stay active and take long walks outside to enjoy some fresh air for your brain. It’s important you step away from your code to be reinvigorated and energized when you come back to code! Who knows? Maybe taking in some fresh air away from your computer  may have helped you think about how to carry out a solution to one of your errors along the way!
 
 
-* 10. Have fun! It’s not worth it to code this huge project without smiling and enjoying the process! We are all just starting out on our coding journey and giving ourselves grace to mess up and learn is very crucial! Enjoy every second of this Cli project! 
+* 10. ***Have fun! ***It’s not worth it to code this huge project without smiling and enjoying the process! We are all just starting out on our coding journey and giving ourselves grace to mess up and learn is very crucial! Enjoy every second of this Cli project! 
 
 # In the Future
 
