@@ -34,7 +34,7 @@ I chose to work with an API, rather than scraping, because scraping is a rather 
 My approach to coding my Joyful Bites app was efficient, systematic and visually appealing. I wanted the user to enjoy their experience in my app and be able to code something that could give the user back colorful and vibrant messages that greeted them both hello and goodbye. 
 
 Some questions I considered when building my Api Class and self.get_meals class method were as follows: 
-* 1.) What is my endpoint
+* 1.) What is my endpoint?
 * 2.) How do I go there and get what I need?
 * 3.) How do I handle that json and turn it into meaningful data? 
 * 4.) how do I make meal OBJECTS FROM that data?
@@ -53,43 +53,40 @@ Some notes I considered when building my Meal class were as follows:
 * Goal of this class is to retrieve the meal the user requested 
 
 
-
-
 I created a bin folder which had my executable file I called “run” that was the command most called in my project because it runs your entire program. I also had a library directory which had a meals folder that held my Api class, my Cli class, my Ingredient, my Meal class and environment.rb class. I also had to follow steps to hide my api key before I published it to my github repository, by making an .env file that stored my personal spoonacular key. The reason why it is important to hide your key is for protection and security purposes, so that no one can ever get access to your key and turn off your own access to your program. This link walks you through step by step on how to hide your API key. `http://dev.to/kcarrel/major-key-alert-hide-your-api-keys-l4c`   
-
 
 
 I also recommend keeping a running list of all the times your program hits an error based on the specific combination of what you typed and selected choices. You want to stay consistent with what you try in binding.pry and this way, you can go through each error one by one, until you have solved each one and your program runs more smoothly. It can be daunting to debug your errors but after a while you will get more used to tackling how to solve your error messages best. 
 
 # 10 Helpful Tips
 
-1. Take one day to research and choose your API or Scraping Website. I took many days to research and this delayed the first stages of my project. Use this first day to also fully understand what the project asks of you, understand all the requirements, read over your API documentation or how you will exactly be scraping the website of your choice. 
+* 1. Take one day to research and choose your API or Scraping Website. I took many days to research and this delayed the first stages of my project. Use this first day to also fully understand what the project asks of you, understand all the requirements, read over your API documentation or how you will exactly be scraping the website of your choice. 
 
-2. Use your family members or friends as rubber duckies, you will NEED to speak out your logic and ideas to someone even if they don’t exactly understand all that you are referring to. This will also be great practice before your assessment.
-
-
-3. Write out a detailed plan for each day you will work on your project with deadlines for yourself and specific tasks you need to accomplish by a certain time. Ask a friend, coding classmate, spouse or family member to keep you accountable if you feel like you need the extra push or source of inspiration. 
+* 2. Use your family members or friends as rubber duckies, you will NEED to speak out your logic and ideas to someone even if they don’t exactly understand all that you are referring to. This will also be great practice before your assessment.
 
 
-4. If you are in the full-time or part-time cohorts, consider attending ALL of the open office hours pertaining to project support held by your cohort leads. You will not be allowed to ask for any help from Ask A Question technical coaches, so it is imperative you utilize the help from your cohort lead and classmates. If you are in the full-time cohort you will have one week of project support but if you are in the part-time cohort, you will be given two weeks of project support. My cohort lead was kind enough to make our project support office hours spanning for two hours long and she added an extra Saturday office hours meeting right before our deadline in order to answer all of our questions! 
+* 3. Write out a detailed plan for each day you will work on your project with deadlines for yourself and specific tasks you need to accomplish by a certain time. Ask a friend, coding classmate, spouse or family member to keep you accountable if you feel like you need the extra push or source of inspiration. 
 
 
-5. Demo your project to your family, friends or cohort lead! Be open to constructive criticism, even from people that do not read code because they may be able to find some errors or give you some creative ideas on what they would like to see as a user of your app. 
+* 4. If you are in the full-time or part-time cohorts, consider attending ALL of the open office hours pertaining to project support held by your cohort leads. You will not be allowed to ask for any help from Ask A Question technical coaches, so it is imperative you utilize the help from your cohort lead and classmates. If you are in the full-time cohort you will have one week of project support but if you are in the part-time cohort, you will be given two weeks of project support. My cohort lead was kind enough to make our project support office hours spanning for two hours long and she added an extra Saturday office hours meeting right before our deadline in order to answer all of our questions! 
 
 
-6. Take many deep breaths when you feel overwhelmed with how much you still need to finish, write down one thing you want to accomplish during that coding session. This way you can make your time more goal-oriented and feel like you are making progress.
+* 5. Demo your project to your family, friends or cohort lead! Be open to constructive criticism, even from people that do not read code because they may be able to find some errors or give you some creative ideas on what they would like to see as a user of your app. 
 
 
-7. Schedule your technical assessment at least a week early, before the final deadline just in case you need to schedule another assessment if you did not initially pass the first one. 
+* 6. Take many deep breaths when you feel overwhelmed with how much you still need to finish, write down one thing you want to accomplish during that coding session. This way you can make your time more goal-oriented and feel like you are making progress.
 
 
-8. Don’t stress, feel blessed! You got into this amazing prestigious coding school, Flatiron, and feel confident that you will make it to the end! Get excited each morning and night when you work on your project!
+* 7. Schedule your technical assessment at least a week early, before the final deadline just in case you need to schedule another assessment if you did not initially pass the first one. 
 
 
-9. Make sure to move, stay active and take long walks outside to enjoy some fresh air for your brain. It’s important you step away from your code to be reinvigorated and energized when you come back to code! Who knows? Maybe taking in some fresh air away from your computer  may have helped you think about how to carry out a solution to one of your errors along the way!
+* 8. Don’t stress, feel blessed! You got into this amazing prestigious coding school, Flatiron, and feel confident that you will make it to the end! Get excited each morning and night when you work on your project!
 
 
-10. Have fun! It’s not worth it to code this huge project without smiling and enjoying the process! We are all just starting out on our coding journey and giving ourselves grace to mess up and learn is very crucial! Enjoy every second of this Cli project! 
+* 9. Make sure to move, stay active and take long walks outside to enjoy some fresh air for your brain. It’s important you step away from your code to be reinvigorated and energized when you come back to code! Who knows? Maybe taking in some fresh air away from your computer  may have helped you think about how to carry out a solution to one of your errors along the way!
+
+
+* 10. Have fun! It’s not worth it to code this huge project without smiling and enjoying the process! We are all just starting out on our coding journey and giving ourselves grace to mess up and learn is very crucial! Enjoy every second of this Cli project! 
 
 # In the Future
 
