@@ -47,7 +47,7 @@ The hardest part to decode was how to best set up my Api class. This Api class w
 
 Below you can see how much I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. It is essential you start getting comfortable with binding.pry as you progress through this Flatiron program and beyond. 
 
-![](https://ibb.co/8McTp9thttp://)
+![](http://ibb.co/8McTp9t)
 
 
 
