@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My Journey to my First CLI Project: Joyful Bites App"
-date:       2020-05-18 00:08:51 +0000
+date:       2020-05-17 20:08:52 -0400
 permalink:  my_journey_to_my_first_cli_project_joyful_bites_app
 ---
 
