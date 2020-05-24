@@ -6,8 +6,8 @@ permalink:  my_journey_to_my_first_cli_project_joyful_bites_app
 ---
 
 
-
-# Planning Stages
+![Screen Shot 2020-05-15 at 9 47 55 PM](https://user-images.githubusercontent.com/61069416/82765412-cc111f80-9de4-11ea-9674-e04608d7bec2.png) 
+## Planning Stages
 
 First, it’s important to understand what exactly is the objective of this project. We were asked to create a CLI using dry Object-Oriented Ruby code that highlighted our understanding of class vs instance methods, self, object instantiation, initialize, shebang line, if/else conditional statements, method return types, variable scopes, iterating through collections, index, arrays, hashes, strings and more. Just in case you were wondering, dry code simply means concise, easy to read code where you do not repeat yourself.  In the 1960’s, CLI’s were the only way for humans to interact with computers. According to w3schools.com, CLI is still being “used by software developers and system administrators to configure computers, install software, and access features that are not available in the graphical interface.” This speaks volumes as to why the master teachers at Flatiron School have asked us to embark on the journey of building a CLI as our first solo portfolio project. 
 
@@ -18,7 +18,7 @@ The user is presented with a text-based interface where they can view files and 
 
  For my project, I decided to go one level deep. The user can interact with the program and receive back detailed information based on an option they choose. My goal was to create an app whose strength was found in the simplicity of the architecture and easy to use commands to retrieve back information based on what meal idea you selected. As our world is undergoing a global pandemic, I thought it was fitting to create an app that helped families and people of all ages to come up with fun meal ideas to cook together. The user also can view the specific ingredients needed for each step and detailed recipe instructions for each meal. I know that for my family, it is not always easy to make it to the grocery store to get all of our favorite ingredients while the stay at home orders are still in effect. Therefore, my app takes away the struggle for you of having to think about what meals to make and allows you to type in the specific ingredient(s) you have available in your fridge, kitchen or pantry. My Joyful Bites app gives you back a list of ten delicious meal options for you to pick from. I also added an option if the user is dairy-free, gluten-free or Vegan and they simply need to type in ‘Vegan GF’ to receive back these dairy-free, gluten-free and Vegan friendly meal options! 
 
-# API
+## API
 
 API stands for Application Program interface. It simply represents a messenger that takes requests and tells the system to do what you want and returns a response back to you. An API stores JSON objects and data and instances of a person. You can think of an API like a waiter running back and forth between the customers who are making their meal options and the chefs preparing the meals chosen. In this case the API, like the waiter, is running back and forth between applications, databases and devices to deliver data and create connectivity. 
 
@@ -29,7 +29,7 @@ Keep in mind, if you choose to use this API you will need to purchase the next p
 
 I chose to work with an API, rather than scraping, because scraping is a rather outdated practice now in the tech coding industry and I wanted to learn a new skill that would be beneficial for me, my future projects and future employers. I also found that with scraping, there is a possibility that the site you are scraping data from can be altered, taken down or moved to another domain which could affect your CLI project. Although, that is not to deter you from choosing to scrape your project, but for my project an API worked best to help me achieve the end results that I wanted visually and for happy user satisfaction. 
 
-# Coding
+## Coding
 
 
 My approach to coding my Joyful Bites app was efficient, systematic and visually appealing. I wanted the user to enjoy their experience in my app and be able to code something that could give the user back colorful and vibrant messages that greeted them both hello and goodbye. 
@@ -108,7 +108,7 @@ I created a bin folder which had my executable file I called “run” that was 
 
 I also recommend keeping a running list of all the times your program hits an error based on the specific combination of what you typed and selected choices. You want to stay consistent with what you try in binding.pry and this way, you can go through each error one by one, until you have solved each one and your program runs more smoothly. It can be daunting to debug your errors but after a while you will get more used to tackling how to solve your error messages best. 
 
-# 10 Helpful Tips
+## 10 Helpful Tips
 
  1. Take one day to research and choose your API or Scraping Website. I took many days to research and this delayed the first stages of my project. Use this first day to also fully understand what the project asks of you, understand all the requirements, read over your API documentation or how you will exactly be scraping the website of your choice. 
 
@@ -138,10 +138,10 @@ I also recommend keeping a running list of all the times your program hits an er
 
 10. *Have fun!* It’s not worth it to code this huge project without smiling and enjoying the process! We are all just starting out on our coding journey and giving ourselves grace to mess up and learn is very crucial! Enjoy every second of this Cli project! 
 
-# In the Future
+## In the Future
 
 As I continue to evolve this app, I hope to turn the Joyful Bites app into a gem that people can download for themselves and use to make their lives so much easier! I plan to add more nutritional information for the user to receive back. As of now, the user can receive the meal options, ingredients needed for each step and the recipe instructions. However, I also want them to be able to see the calories and nutritional facts about the meal. I hope to incorporate a way for users to see various reviews from other Joyful Bites users on the meal and tips other Joyful Bites users have found helpful when cooking this meal. I want the user to be able to rate the meal, with 1 to 5 starts, after they have cooked it. I want to modify the output of the recipe instructions string to be changed to an index and numbered. Lastly, I want to include the preperation time needed to create this meal and a list of alternate ingredients that can be used to make the meal.
-# Shoutouts
+## Shoutouts
 
 I want to thank my cohort lead teacher, Dominique De Leon for her tireless help with answering all my questions and her encouragement throughout the culmination of this project. I also want to thank my fellow classmates in my cohort that were also readily available to pair program with me, offer constructive criticism that made my code better and were always kind enough to answer my questions. Lastly, I want to thank my parents, Pedro and Nancy, and my dear sisters, Karol and Jean, who were all my constant source of support,creativity and love. Without my family, I would not have been able to keep going. Most of all, I am very grateful to Jesus, my God for His grace and His strength He provided for me to be resilient and finish this incredible project. I am so excited to start this next module and look forward to starting my second project soon! 
 
