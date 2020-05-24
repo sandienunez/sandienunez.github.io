@@ -16,6 +16,8 @@ First, it’s important to understand what exactly is the objective of this proj
 
 The user is presented with a text-based interface where they can view files and send commands. A response is sent to the user with a list, table or message to select from. The outermost level of your own operating system is called a shell. In my case, I have a macOS and my shell is called Bash. This Bash shell is the software that controls the Command Line Interface. Also the directory is your folder, where all your files for your project will be created. Below are some helpful CLI commands that will be very important to remember as you get started with your project. 
 
+![Screen Shot 2020-05-17 at 3 50 17 PM](https://user-images.githubusercontent.com/61069416/82766121-59a33e00-9dea-11ea-9990-70b142bd2eb1.png)
+
  For my project, I decided to go one level deep. The user can interact with the program and receive back detailed information based on an option they choose. My goal was to create an app whose strength was found in the simplicity of the architecture and easy to use commands to retrieve back information based on what meal idea you selected. As our world is undergoing a global pandemic, I thought it was fitting to create an app that helped families and people of all ages to come up with fun meal ideas to cook together. The user also can view the specific ingredients needed for each step and detailed recipe instructions for each meal. I know that for my family, it is not always easy to make it to the grocery store to get all of our favorite ingredients while the stay at home orders are still in effect. Therefore, my app takes away the struggle for you of having to think about what meals to make and allows you to type in the specific ingredient(s) you have available in your fridge, kitchen or pantry. My Joyful Bites app gives you back a list of ten delicious meal options for you to pick from. I also added an option if the user is dairy-free, gluten-free or Vegan and they simply need to type in ‘Vegan GF’ to receive back these dairy-free, gluten-free and Vegan friendly meal options! 
 
 ## API
@@ -24,15 +26,24 @@ API stands for Application Program interface. It simply represents a messenger t
 
 I decided to go with retrieving my meal data from a wonderful API called Spoonacular. You need to first make a free account and read over the authentication document for the API to learn how to set up your own personal API key and how to use it going forward in your project. An API key is a unique identifier that controls your access to an API service provider. The API key starts to keep a record of how many calls are made to the API by the user and what areas the user can access. This is why the Spoonacular API denied my access after 150 calls, and told me to upgrade my plan or else I would not have access to the API to finish my project. Here is a link to the documentation for the Spoonacular API key. `http://spoonacular.com/food-api/docs#Authentication`
 
+![Screen Shot 2020-05-17 at 3 27 08 PM](https://user-images.githubusercontent.com/61069416/82766138-7b9cc080-9dea-11ea-9fa5-cff82277c4eb.png)
+
 
 Keep in mind, if you choose to use this API you will need to purchase the next plan up from the free plan, because after 150 points you are locked out from using your API endpoints in your project. I went with the cook plan. It was worth the purchase though, because it upgraded me to 1500 points a day and allowed me to work on my project all day without locking me out. Also remember that all plan payments charge you monthly and can be cancelled at any time. I recommend canceling after you pass your technical assessment.  
+
+![Screen Shot 2020-05-24 at 6 16 05 PM](https://user-images.githubusercontent.com/61069416/82766160-aab33200-9dea-11ea-87fe-f11521e3d6a0.png)
 
 I chose to work with an API, rather than scraping, because scraping is a rather outdated practice now in the tech coding industry and I wanted to learn a new skill that would be beneficial for me, my future projects and future employers. I also found that with scraping, there is a possibility that the site you are scraping data from can be altered, taken down or moved to another domain which could affect your CLI project. Although, that is not to deter you from choosing to scrape your project, but for my project an API worked best to help me achieve the end results that I wanted visually and for happy user satisfaction. 
 
 ## Coding
 
+![Screen Shot 2020-05-17 at 7 12 53 PM](https://user-images.githubusercontent.com/61069416/82766172-d209ff00-9dea-11ea-87c9-9686ad5cca98.png)
 
 My approach to coding my Joyful Bites app was efficient, systematic and visually appealing. I wanted the user to enjoy their experience in my app and be able to code something that could give the user back colorful and vibrant messages that greeted them both hello and goodbye. 
+
+![Screen Shot 2020-05-24 at 6 21 01 PM](https://user-images.githubusercontent.com/61069416/82766241-696f5200-9deb-11ea-8134-7a3b0abaaf5a.png)
+![Screen Shot 2020-05-24 at 6 20 50 PM](https://user-images.githubusercontent.com/61069416/82766244-75f3aa80-9deb-11ea-9d58-85a3ec80e570.png)
+![Screen Shot 2020-05-24 at 6 18 49 PM](https://user-images.githubusercontent.com/61069416/82766251-81df6c80-9deb-11ea-965c-b97a43a13900.png)
 
 Some questions I considered when building my Api Class and self.get_meals class method were as follows: 
 * 1.) What is my endpoint?
