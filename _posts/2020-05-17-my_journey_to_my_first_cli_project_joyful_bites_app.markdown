@@ -39,6 +39,11 @@ I chose to work with an API, rather than scraping, because scraping is a rather 
 
 ![Screen Shot 2020-05-17 at 7 12 53 PM](https://user-images.githubusercontent.com/61069416/82766172-d209ff00-9dea-11ea-87c9-9686ad5cca98.png)
 
+![Screen Shot 2020-05-24 at 6 19 11 PM](https://user-images.githubusercontent.com/61069416/82766413-14ccd680-9ded-11ea-803d-0e64fec252d2.png)
+![Screen Shot 2020-05-24 at 6 19 29 PM](https://user-images.githubusercontent.com/61069416/82766421-1b5b4e00-9ded-11ea-949e-9586ceb43e7f.png)
+![Screen Shot 2020-05-24 at 6 19 50 PM](https://user-images.githubusercontent.com/61069416/82766427-2a420080-9ded-11ea-8540-fb015b467250.png)
+![Screen Shot 2020-05-24 at 6 20 15 PM](https://user-images.githubusercontent.com/61069416/82766431-2e6e1e00-9ded-11ea-8b2c-52332973cc34.png)
+
 My approach to coding my Joyful Bites app was efficient, systematic and visually appealing. I wanted the user to enjoy their experience in my app and be able to code something that could give the user back colorful and vibrant messages that greeted them both hello and goodbye. 
 
 ![Screen Shot 2020-05-24 at 6 18 49 PM](https://user-images.githubusercontent.com/61069416/82766251-81df6c80-9deb-11ea-965c-b97a43a13900.png)
