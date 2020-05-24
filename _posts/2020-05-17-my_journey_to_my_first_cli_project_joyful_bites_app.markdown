@@ -61,7 +61,7 @@ Some questions I considered when building my Api Class and self.get_meals class 
 The hardest part to decode was how to best set up my Api class. This Api class would get my information and return back the information to the user. I found making this Api class to be challenging because I had to use two data Api endpoints to retrieve back the information I needed for my user and parse through the ingredients array and the analyzed instructions array. 
 ![Screen Shot 2020-05-17 at 7 52 48 PM](https://user-images.githubusercontent.com/61069416/82766393-e18a4780-9dec-11ea-84b1-adf025b4c693.png)
 
-My strings of information needed were stored in an array of hashes. This proved to be a challenging and tedious task but was very fun to use methods such as first, map, flatten, bang operators, if conditionals needed to get back the ingredients and recipe instructions to move the project forward. 
+My strings of information needed were stored in an array of hashes. This proved to be a challenging and tedious task but was very fun to use methods such as first, map, flatten, bang operators, join, if conditionals needed to get back the ingredients and recipe instructions to move the project forward. 
 
 ![Screen Shot 2020-05-17 at 7 53 17 PM](https://user-images.githubusercontent.com/61069416/82766398-eea73680-9dec-11ea-91f5-c158cf903edf.png)
    
