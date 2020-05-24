@@ -41,9 +41,10 @@ I chose to work with an API, rather than scraping, because scraping is a rather 
 
 My approach to coding my Joyful Bites app was efficient, systematic and visually appealing. I wanted the user to enjoy their experience in my app and be able to code something that could give the user back colorful and vibrant messages that greeted them both hello and goodbye. 
 
-![Screen Shot 2020-05-24 at 6 21 01 PM](https://user-images.githubusercontent.com/61069416/82766241-696f5200-9deb-11ea-8134-7a3b0abaaf5a.png)
-![Screen Shot 2020-05-24 at 6 20 50 PM](https://user-images.githubusercontent.com/61069416/82766244-75f3aa80-9deb-11ea-9d58-85a3ec80e570.png)
 ![Screen Shot 2020-05-24 at 6 18 49 PM](https://user-images.githubusercontent.com/61069416/82766251-81df6c80-9deb-11ea-965c-b97a43a13900.png)
+
+![Screen Shot 2020-05-24 at 6 20 50 PM](https://user-images.githubusercontent.com/61069416/82766244-75f3aa80-9deb-11ea-9d58-85a3ec80e570.png)
+![Screen Shot 2020-05-24 at 6 21 01 PM](https://user-images.githubusercontent.com/61069416/82766241-696f5200-9deb-11ea-8134-7a3b0abaaf5a.png)
 
 Some questions I considered when building my Api Class and self.get_meals class method were as follows: 
 * 1.) What is my endpoint?
