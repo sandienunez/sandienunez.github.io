@@ -6,7 +6,7 @@ permalink:  my_journey_to_my_first_cli_project_joyful_bites_app
 ---
 
 
-![Screen Shot 2020-05-15 at 9 47 55 PM](https://user-images.githubusercontent.com/61069416/82765412-cc111f80-9de4-11ea-9674-e04608d7bec2.png) 
+![Screen Shot 2020-04-10 at 7 32 44 PM](https://user-images.githubusercontent.com/61069416/82766043-adf9ee00-9de9-11ea-96dc-2ffbf1849bda.png)
 ## Planning Stages
 
 First, it’s important to understand what exactly is the objective of this project. We were asked to create a CLI using dry Object-Oriented Ruby code that highlighted our understanding of class vs instance methods, self, object instantiation, initialize, shebang line, if/else conditional statements, method return types, variable scopes, iterating through collections, index, arrays, hashes, strings and more. Just in case you were wondering, dry code simply means concise, easy to read code where you do not repeat yourself.  In the 1960’s, CLI’s were the only way for humans to interact with computers. According to w3schools.com, CLI is still being “used by software developers and system administrators to configure computers, install software, and access features that are not available in the graphical interface.” This speaks volumes as to why the master teachers at Flatiron School have asked us to embark on the journey of building a CLI as our first solo portfolio project. 
