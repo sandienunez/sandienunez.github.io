@@ -64,6 +64,8 @@ The hardest part to decode was how to best set up my Api class. This Api class w
 My strings of information needed were stored in an array of hashes. This proved to be a challenging and tedious task but was very fun to use methods such as first, map, flatten, bang operators, join, if conditionals needed to get back the ingredients and recipe instructions to move the project forward. 
 
 ![Screen Shot 2020-05-17 at 7 53 17 PM](https://user-images.githubusercontent.com/61069416/82766398-eea73680-9dec-11ea-91f5-c158cf903edf.png)
+
+![Screen Shot 2020-05-17 at 7 52 59 PM](https://user-images.githubusercontent.com/61069416/82766517-d8e64100-9ded-11ea-8acf-09c2fc25731e.png)
    
 			 
 I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. 
