@@ -45,50 +45,8 @@ The hardest part to decode was how to best set up my Api class. This Api class w
 
 
    
-        meals = JSON.parse(response)
-
-        new_ingredient = Ingredient.new(ingredient)
-
-    
-    
-        meals.each_with_index do |meal_details, index|
-            new_meal = Meal.find_or_create_by_name(meal_details["title"])
-             url = "https://api.spoonacular.com/recipes/#{meal_details["id"]}/analyzedInstructions?apiKey=#{ENV.fetch('SPOONACULAR_API_KEY')}" 
-             new_meal.url=url 
-            new_ingredient.meals << new_meal 
-        end
-    end 
-
-
-         
-
-            if recipe != []
-          
-            steps_hashes_array = recipe.first["steps"]
-            steps = steps_hashes_array.map do |hash|
-                hash["step"]
-
-            end 
-          
-            ingredient_array = recipe.first["steps"].map do |recipe_hash|
-                
-                recipe_hash["ingredients"].map do |ingredient_hash|
-
-                ingredient_hash["name"]
-                end
-        
-            end 
-            ingredient_array.flatten!
-        meal_object.ingredients=ingredient_array 
-            #   binding.pry
-            recipe_string = steps.join
-            meal_object.recipe=recipe_string
-            else 
-                puts "  "
-                puts "Sorry, this recipe is still under development by the chef. Please try another number!"
-            end
-        end  `
-
+       ![Screen Shot 2020-05-17 at 7 15 59 PM](https://user-images.githubusercontent.com/61069416/82766083-fa452e00-9de9-11ea-869a-f2d057d7020e.png)
+			 
 I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. 
 
 
