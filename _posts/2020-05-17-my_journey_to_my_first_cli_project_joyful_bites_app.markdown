@@ -89,7 +89,13 @@ The hardest part to decode was how to best set up my Api class. This Api class w
             end
         end  `
 
-I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. It is essential you start getting comfortable with binding.pry as you progress through this Flatiron program and beyond. 
+I relied on binding.pry to pause my code at a specific line and poke inside to see what was inside my arrays and I was going to achieve retrieving what I wanted out of the arrays. 
+
+
+![Screen Shot 2020-05-17 at 7 49 40 PM](https://user-images.githubusercontent.com/61069416/82765987-3926b400-9de9-11ea-9d4a-3021b4d9200b.png)
+![Screen Shot 2020-05-17 at 7 49 58 PM](https://user-images.githubusercontent.com/61069416/82765995-42b01c00-9de9-11ea-9fbc-73efba32e5ba.png)
+
+It is essential you start getting comfortable with binding.pry as you progress through this Flatiron program and beyond. 
 
 ![](https://ibb.co/8McTp9t) 
 
