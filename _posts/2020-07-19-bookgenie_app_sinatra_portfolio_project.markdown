@@ -108,6 +108,7 @@ The following images depict what a user sees visually upon logging into BookGeni
 
 
 The most challenging part of the project for me was setting up validations and installing/learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server for what seemed like an eternity, but after much persistence and researching I was able to perservere and include flash messages in my project. Below are some images of the flash messages and the code behind them.
+![Screen Shot 2020-07-20 at 5 34 48 PM](https://user-images.githubusercontent.com/61069416/87989040-586f5400-caaf-11ea-9b2c-24d354915112.png)
 
 
 ![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
