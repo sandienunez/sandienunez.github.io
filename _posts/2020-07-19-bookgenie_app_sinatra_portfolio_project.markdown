@@ -22,7 +22,6 @@ Because of my love for music, I thought it would be facinating to create a home 
 
 Coding this entire project was a lot of fun, but it came with many challenges and error messages to decode. First, I needed to decide what I wanted to give the user access to and how many models and controllers I was going to make. I chose a user model and book model. My book model belongs_to a user, and my user model has_many books are the relationships I established. Remember, the convention is that models are singular when named and essentially everything else is plural when named.
 
-I learned that we render views and redirect to routes.
 
 MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
 
@@ -37,10 +36,16 @@ These are the requirements I made sure I understood before coding in order to pa
 Here is my schema, where I needed to make a database, create a table, run migrations, seed the database, add columns and seed my data by running 'rake db:seed' in the terminal. 
 ![Screen Shot 2020-07-19 at 9 46 36 PM](https://user-images.githubusercontent.com/61069416/87891844-5fdc2200-ca09-11ea-9e45-1cf2237768fa.png)
 
-Here is the list of commands I found useful during this project and that you can run by running rake -T.
+Below is a handy list of commands I found useful during this project and that you can run by running rake -T.
 
-![Screen Shot 2020-07-19 at 9 48 42 PM](https://user-images.githubusercontent.com/61069416/87892009-d9741000-ca09-11ea-8292-5b179d0054d6.png)
+![Screen Shot 2020-07-19 at 9 48 42 PM](https://user-images.githubusercontent.com/61069416/87892416-0aa11000-ca0b-11ea-9e8e-750a57c1ca2a.png)
 
+This table by Flatiron student, Jason Arnold, depicts the seven restful routes we learned in this module and that we needed to apply in this project. It is a very helpful table that breaks down each request. I learned that we render views and redirect to routes.
+
+![1_slrwqTXKO6evtPn5YVWR2Q](https://user-images.githubusercontent.com/61069416/87892314-c6157480-ca0a-11ea-9d80-c521de7f372a.png)
+
+
+Here are the common error messages that I received throughout the project that had to do with missing a slight / or a " " or had to do with redirecting to correct routes. 
 
 ![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
 
@@ -60,9 +65,15 @@ Here is the list of commands I found useful during this project and that you can
 
 ![Screen Shot 2020-07-14 at 2 19 02 PM](https://user-images.githubusercontent.com/61069416/87890523-ef330680-ca04-11ea-985c-2db0ea73d20e.png)
 
+
+The following images depict what a user sees visually upon logging into BookGenie, entering the home playlist page and how a user can create a book object by filling out a form. In order to bring my ideas for this project to life, much embedded ruby was used in the the view erb files, ruby code in the controllers, as well as css and html for styling purposes. 
+
+
 ![Screen Shot 2020-07-16 at 3 02 27 PM](https://user-images.githubusercontent.com/61069416/87890536-fce88c00-ca04-11ea-8c8d-86b60971a101.png)
 
 
+
+The most challenging part of the project for me was setting up validations and installing and learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server, but after much persistence and researching I was able to perservere and include flash messages in my project. 
 
 ## 10 Helpful Tips
 
