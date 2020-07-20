@@ -31,11 +31,11 @@ Remember, the convention is that models are singular when named and essentially 
 
 
 
-MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
+MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of concerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
 
 ![Screen Shot 2020-07-19 at 10 41 02 PM](https://user-images.githubusercontent.com/61069416/87894519-fb24c580-ca10-11ea-971e-bdbf9c259fc4.png)
 
-CRUD stands for create, read, update and delete. They are four basic functionalities that coders use to make web apps and are essentially a set of CRUD actions that a user can make using Active Record.
+CRUD stands for create, read, update and delete. They are four basic functionalities that coders use to make web apps and are essentially a set of CRUD actions that a user can make using Active Record. Create is where I instantiate a new book object, give it a title, save it and instantiate it with a hash containing all the attributes. The object can be created in a block as well. Read is a function called to see all the book objects currently in my BookGenie list. I can return the first or last item in my table. Again, here I am simply retrieving the object and not changing it. Update is called to find, update or save an object. It can be updated using the update method. We call this function when we need to change the information about this book object. Destroy is used to remove a book object from my BookGenie list and can destroy a single item or all items at once.
 
 
 ![Screen Shot 2020-07-19 at 9 30 17 PM](https://user-images.githubusercontent.com/61069416/87891666-ba28b300-ca08-11ea-9c33-111e2bfb57ec.png)
@@ -55,7 +55,7 @@ This incredible table created by a Flatiron graduate, Jason Arnold, depicts the 
 ![1_slrwqTXKO6evtPn5YVWR2Q](https://user-images.githubusercontent.com/61069416/87892314-c6157480-ca0a-11ea-9d80-c521de7f372a.png)
 
 
-Here are the common error messages that I received throughout the project that had to do with missing a slight / or a ' ' or had to do with redirecting to correct routes. 
+Here are the common error messages that I received throughout the project that had to do with missing a slight / or a ' ' or had to do with redirecting to incorrect routes. 
 
 ![Screen Shot 2020-07-11 at 7 09 05 PM](https://user-images.githubusercontent.com/61069416/87890515-eb9f7f80-ca04-11ea-90a1-2e258d5bee44.png)
 
@@ -64,6 +64,12 @@ Here are the common error messages that I received throughout the project that h
 
 
 ![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
+
+When errors occurred, being able to navigate my code using binding.pry was essential. 
+
+![Screen Shot 2020-07-20 at 11 00 06 AM](https://user-images.githubusercontent.com/61069416/87987559-d716c200-caac-11ea-9117-4028e06e2d97.png)
+![Screen Shot 2020-07-20 at 11 00 24 AM](https://user-images.githubusercontent.com/61069416/87987555-d4b46800-caac-11ea-9ba0-a633fc40e22a.png)
+![Screen Shot 2020-07-20 at 11 00 51 AM](https://user-images.githubusercontent.com/61069416/87987523-c8c8a600-caac-11ea-8aa6-6eef8b10650c.png)
 
 If you have a Mac and are having issues with a corrupted database as I was, make sure to force quit ruby in your active monitor frequently throughout your coding sessions. Do this by typing ruby in the search engine when you click active monitor and click the x to the left of ruby. This will save you a lot of time on labs and this project!
 
@@ -119,4 +125,4 @@ I want to first thank God for this incredible opportunity to be able to create a
 
 Please make sure to take a quick moment to check out my github below and slack me at Sandie Nunez to let me know your thoughts on my project, critiques or questions you might have!
 
-## https://github.com/sandienunez/BookGenie/tree/master/app
+## https://github.com/sandienunez/BookGenie
