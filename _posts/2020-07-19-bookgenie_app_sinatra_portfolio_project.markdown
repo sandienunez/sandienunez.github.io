@@ -20,7 +20,15 @@ Because of my love for music, I thought it would be facinating to create a home 
 
 ## Coding
 
-Coding this entire project was a lot of fun, but it came with many challenges and error messages to decode. First, I needed to decide what I wanted to give the user access to and how many models and controllers I was going to make. I chose a user model and book model. My book model belongs_to a user, and my user model has_many books are the relationships I established. Remember, the convention is that models are singular when named and essentially everything else is plural when named.
+Coding this entire project was a lot of fun, but it came with many challenges and error messages to decode. First, I needed to decide what I wanted to give the user access to and how many models and controllers I was going to make. I chose a user model and book model. My book model belongs_to a user, and my user model has_many books are the relationships I established. 
+
+
+![Screen Shot 2020-07-19 at 10 22 08 PM](https://user-images.githubusercontent.com/61069416/87893618-6c16ae00-ca0e-11ea-95e9-5e54be2c6e6e.png)
+![Screen Shot 2020-07-19 at 10 22 14 PM](https://user-images.githubusercontent.com/61069416/87893621-6e790800-ca0e-11ea-8113-3ca2074e235f.png)
+
+Remember, the convention is that models are singular when named and essentially everything else is plural when named.
+![Screen Shot 2020-07-19 at 10 26 41 PM](https://user-images.githubusercontent.com/61069416/87893811-f6f7a880-ca0e-11ea-9675-0655bdf44412.png)
+
 
 
 MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
@@ -40,30 +48,33 @@ Below is a handy list of commands I found useful during this project and that yo
 
 ![Screen Shot 2020-07-19 at 9 48 42 PM](https://user-images.githubusercontent.com/61069416/87892416-0aa11000-ca0b-11ea-9e8e-750a57c1ca2a.png)
 
-This table by Flatiron student, Jason Arnold, depicts the seven restful routes we learned in this module and that we needed to apply in this project. It is a very helpful table that breaks down each request. I learned that we render views and redirect to routes.
+This incredible table created by a Flatiron graduate, Jason Arnold, depicts the seven restful routes we learned in this module and that we needed to apply in this project. It is a very helpful table that breaks down each request. I learned that we render views and redirect to routes.
 
 ![1_slrwqTXKO6evtPn5YVWR2Q](https://user-images.githubusercontent.com/61069416/87892314-c6157480-ca0a-11ea-9d80-c521de7f372a.png)
 
 
 Here are the common error messages that I received throughout the project that had to do with missing a slight / or a " " or had to do with redirecting to correct routes. 
 
-![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
 
 ![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
 
-![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
-
-![Screen Shot 2020-07-13 at 9 00 18 PM](https://user-images.githubusercontent.com/61069416/87890473-b3983c80-ca04-11ea-9a1a-3d5c3a4611b9.png)
 
 ![Screen Shot 2020-07-18 at 4 15 54 PM](https://user-images.githubusercontent.com/61069416/87890507-e17d8100-ca04-11ea-9c16-86b503c757b3.png)
-
-![Screen Shot 2020-07-14 at 1 06 41 PM](https://user-images.githubusercontent.com/61069416/87890511-e5a99e80-ca04-11ea-97e0-5248001f8232.png)
 
 ![Screen Shot 2020-07-19 at 9 12 46 PM](https://user-images.githubusercontent.com/61069416/87890512-e80bf880-ca04-11ea-95c4-3f95298b6939.png)
 
 ![Screen Shot 2020-07-11 at 7 09 05 PM](https://user-images.githubusercontent.com/61069416/87890515-eb9f7f80-ca04-11ea-90a1-2e258d5bee44.png)
 
+
 ![Screen Shot 2020-07-14 at 2 19 02 PM](https://user-images.githubusercontent.com/61069416/87890523-ef330680-ca04-11ea-985c-2db0ea73d20e.png)
+
+If you have a Mac and are having issues with a corrupted database as I was, make sure to force quit ruby in your active monitor frequently throughout your coding sessions. Do this by typing ruby in the search engine when you click active monitor and click the x to the left of ruby. This will save you a lot of time on labs and this project!
+![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
+
+
+
+This is how I coded the my post books route that gave me the most trouble. First I needed to create a new book object and pass in params or in my case, all of the attributes I had chosen for each book object. 
+![Screen Shot 2020-07-14 at 1 06 41 PM](https://user-images.githubusercontent.com/61069416/87890511-e5a99e80-ca04-11ea-97e0-5248001f8232.png)
 
 
 The following images depict what a user sees visually upon logging into BookGenie, entering the home playlist page and how a user can create a book object by filling out a form. In order to bring my ideas for this project to life, much embedded ruby was used in the the view erb files, ruby code in the controllers, as well as css and html for styling purposes. 
@@ -71,16 +82,22 @@ The following images depict what a user sees visually upon logging into BookGeni
 
 ![Screen Shot 2020-07-16 at 3 02 27 PM](https://user-images.githubusercontent.com/61069416/87890536-fce88c00-ca04-11ea-8c8d-86b60971a101.png)
 
+![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
+
+![Screen Shot 2020-07-13 at 9 00 18 PM](https://user-images.githubusercontent.com/61069416/87890473-b3983c80-ca04-11ea-9a1a-3d5c3a4611b9.png)
 
 
 The most challenging part of the project for me was setting up validations and installing and learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server, but after much persistence and researching I was able to perservere and include flash messages in my project. 
+
+
+![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
 
 ## 10 Helpful Tips
 
  1. Choose a project idea that you are crazy passionate about and that you find interesting! Make it stand out, choose something innovative and something that you have not seen created yet. 
  2. Do your homework! Watch all your cohort leads videos and any youtube videos from Flatiron Teachers going over Sinatra builds. Read blogs from other Flatiron students on learn magazine or medium to gage how they approached this project. Also watch some Sinatra projects that show demos of their projects so you can get an idea of how you want your project to look or not to look.
  3. Pray, eat healthy, exercise regularly, take long walks in nature, don't compromise your health to finish this project. Wake up early, do the hard work and believe that God will get you through this challenge!
- 4. Have a joyful and postiive mindset! Keep telling yourself that you will advance and debug and find a solution no matter what. Period. 
+ 4. Have a joyful and postive mindset! Keep telling yourself that you will advance and debug and find a solution no matter what. Period. 
  5. Be aware of distractions, internet or not, stay focused and use the pomodoro method (free app) if needed!
  6. Don't give up! Ask constant questions and ask more and more and more questions. It's how you will be ready for your assessment.
  7. Ask your family, friends or cohort lead for feedback on your project. Don't get offended if they think your project looks like a 1999 html website or super oldschool. Remember, for many this is our first experience creating a real webserver project, so take all criticism with a grain of salt. Always looks for ways to improve your code, layout and overall project.
