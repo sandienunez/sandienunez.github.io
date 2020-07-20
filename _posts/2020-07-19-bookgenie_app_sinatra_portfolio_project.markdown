@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BookGenie App: Sinatra Portfolio Project "
-date:       2020-07-20 01:26:17 +0000
+date:       2020-07-19 21:26:18 -0400
 permalink:  bookgenie_app_sinatra_portfolio_project
 ---
 
@@ -20,11 +20,27 @@ Because of my love for music, I thought it would be facinating to create a home 
 
 ## Coding
 
-Coding this entire project was a lot of fun, but did not come without its challenges. First, I needed to decide what I wanted to give the user access to and how many models and controllers I was going to make. I chose a user model and book model. My book model belongs_to a user, and my user model has_many books are the relationships I established. Remember, the convention is that models are singular when named and essentially everything else is plural when named.
+Coding this entire project was a lot of fun, but it came with many challenges and error messages to decode. First, I needed to decide what I wanted to give the user access to and how many models and controllers I was going to make. I chose a user model and book model. My book model belongs_to a user, and my user model has_many books are the relationships I established. Remember, the convention is that models are singular when named and essentially everything else is plural when named.
 
 I learned that we render views and redirect to routes.
 
-MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. CRUD stands for create, read, update and delete. 
+MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
+
+CRUD stands for create, read, update and delete. They are four basic functionalities that coders use to make web apps and are essentially a set of CRUD actions that a user can make using Active Record.
+
+
+![Screen Shot 2020-07-19 at 9 30 17 PM](https://user-images.githubusercontent.com/61069416/87891666-ba28b300-ca08-11ea-9c33-111e2bfb57ec.png)
+
+These are the requirements I made sure I understood before coding in order to pass this project.
+![Screen Shot 2020-07-19 at 9 31 54 PM](https://user-images.githubusercontent.com/61069416/87891670-c01e9400-ca08-11ea-8f39-2cd8246adf6d.png)
+
+Here is my schema, where I needed to make a database, create a table, run migrations, seed the database, add columns and seed my data by running 'rake db:seed' in the terminal. 
+![Screen Shot 2020-07-19 at 9 46 36 PM](https://user-images.githubusercontent.com/61069416/87891844-5fdc2200-ca09-11ea-9e45-1cf2237768fa.png)
+
+Here is the list of commands I found useful during this project and that you can run by running rake -T.
+
+![Screen Shot 2020-07-19 at 9 48 42 PM](https://user-images.githubusercontent.com/61069416/87892009-d9741000-ca09-11ea-8292-5b179d0054d6.png)
+
 
 ![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
 
