@@ -94,20 +94,17 @@ Here is how I solved this error not letting me push to my github, below are the 
 
 The following images depict what a user sees visually upon logging into BookGenie, entering the home playlist page and how a user can create a book object by filling out a form. In order to bring my ideas for this project to life, much embedded ruby was used in the the view erb files, ruby code in the controllers, as well as css and html for styling purposes. 
 
-![Screen Shot 2020-07-20 at 5 30 52 PM](https://user-images.githubusercontent.com/61069416/87988726-ce26f000-caae-11ea-8b79-a9874a224dab.png)
-![Screen Shot 2020-07-20 at 5 30 29 PM](https://user-images.githubusercontent.com/61069416/87988734-d0894a00-caae-11ea-8cac-74dd5f0c730d.png)
-![Screen Shot 2020-07-20 at 5 30 23 PM](https://user-images.githubusercontent.com/61069416/87988741-d2eba400-caae-11ea-8809-d98376c4c586.png)
-![Screen Shot 2020-07-20 at 5 30 13 PM](https://user-images.githubusercontent.com/61069416/87988757-d7b05800-caae-11ea-8d6f-04a85a305227.png)
-![Screen Shot 2020-07-20 at 5 27 44 PM](https://user-images.githubusercontent.com/61069416/87988764-db43df00-caae-11ea-97e8-9843b1b158bb.png)
-
-
 ![Screen Shot 2020-07-18 at 4 15 54 PM](https://user-images.githubusercontent.com/61069416/87890507-e17d8100-ca04-11ea-9c16-86b503c757b3.png)
-
 
 ![Screen Shot 2020-07-16 at 3 02 27 PM](https://user-images.githubusercontent.com/61069416/87890536-fce88c00-ca04-11ea-8c8d-86b60971a101.png)
 
 ![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
 
+![Screen Shot 2020-07-20 at 5 30 52 PM](https://user-images.githubusercontent.com/61069416/87988726-ce26f000-caae-11ea-8b79-a9874a224dab.png)
+![Screen Shot 2020-07-20 at 5 30 29 PM](https://user-images.githubusercontent.com/61069416/87988734-d0894a00-caae-11ea-8cac-74dd5f0c730d.png)
+![Screen Shot 2020-07-20 at 5 30 23 PM](https://user-images.githubusercontent.com/61069416/87988741-d2eba400-caae-11ea-8809-d98376c4c586.png)
+![Screen Shot 2020-07-20 at 5 30 13 PM](https://user-images.githubusercontent.com/61069416/87988757-d7b05800-caae-11ea-8d6f-04a85a305227.png)
+![Screen Shot 2020-07-20 at 5 27 44 PM](https://user-images.githubusercontent.com/61069416/87988764-db43df00-caae-11ea-97e8-9843b1b158bb.png)
 
 
 The most challenging part of the project for me was setting up validations and installing/learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server for what seemed like an eternity, but after much persistence and researching I was able to perservere and include flash messages in my project. Below are some images of the flash messages and the code behind them.
