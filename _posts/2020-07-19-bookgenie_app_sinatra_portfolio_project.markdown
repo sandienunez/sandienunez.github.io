@@ -53,7 +53,7 @@ This incredible table created by a Flatiron graduate, Jason Arnold, depicts the 
 ![1_slrwqTXKO6evtPn5YVWR2Q](https://user-images.githubusercontent.com/61069416/87892314-c6157480-ca0a-11ea-9d80-c521de7f372a.png)
 
 
-Here are the common error messages that I received throughout the project that had to do with missing a slight / or a " " or had to do with redirecting to correct routes. 
+Here are the common error messages that I received throughout the project that had to do with missing a slight / or a ' ' or had to do with redirecting to correct routes. 
 
 
 ![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
@@ -70,7 +70,6 @@ Here are the common error messages that I received throughout the project that h
 
 If you have a Mac and are having issues with a corrupted database as I was, make sure to force quit ruby in your active monitor frequently throughout your coding sessions. Do this by typing ruby in the search engine when you click active monitor and click the x to the left of ruby. This will save you a lot of time on labs and this project!
 ![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
-
 
 
 This is how I coded the my post books route that gave me the most trouble. First I needed to create a new book object and pass in params or in my case, all of the attributes I had chosen for each book object. 
@@ -111,5 +110,7 @@ As I continue to evolve this app, I want to create a seperate tab on the home na
 ## Shoutouts
 
 I want to first thank God for this incredible opportunity to be able to create another coding project that I am crazy passionate about and has been such an incredible learning process for me. God really helped sustain me and inspire me with creativity. He gave me His unending strength, peace and wisdom to bring this project to life! A huge thank you to my cohort lead teacher, Dominique De Leon for her guidance and advice as I navigated my first web server application and her patience as she reiterated the seven restful routes to me again and again. I also want to thank my programming classmates who were so kind to give of their time to explain to me my mistakes and the neverending questions I had. Lastly, I am so grateful for my family, my parents, Pedro and Nancy, and my incredible sisters, Karol and Jean, who all stood by my side as I made my final commit. Without their constant support, I would not have been able to survive while coding this project. They are wonderful human beings. I look forward to starting the third module on Rails this next week and hope to create a new app that surpasses this project very soon!
+
+Please make sure to take a quick moment to check out my github below and slack me at Sandie Nunez to let me know your thoughts on my project, critiques or questions you might have!
 
 ## https://github.com/sandienunez/BookGenie/tree/master/app
