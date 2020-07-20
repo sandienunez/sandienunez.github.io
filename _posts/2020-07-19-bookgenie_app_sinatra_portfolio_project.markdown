@@ -61,7 +61,7 @@ Here are the common error messages that I received throughout the project that h
 
 ![Screen Shot 2020-07-14 at 2 19 02 PM](https://user-images.githubusercontent.com/61069416/87890523-ef330680-ca04-11ea-985c-2db0ea73d20e.png)
 
-![Screen Shot 2020-07-14 at 1 06 41 PM](https://user-images.githubusercontent.com/61069416/87890511-e5a99e80-ca04-11ea-97e0-5248001f8232.png)
+
 
 ![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
 
@@ -71,6 +71,10 @@ If you have a Mac and are having issues with a corrupted database as I was, make
 
 
 This is how I coded the my post books route that gave me the most trouble. First I needed to create a new book object and pass in params or in my case, all of the attributes I had chosen for each book object. 
+
+
+![Screen Shot 2020-07-19 at 10 47 43 PM](https://user-images.githubusercontent.com/61069416/87894877-f90f3680-ca11-11ea-9468-5d5d8f7add88.png)
+
 
 ![Screen Shot 2020-07-19 at 9 12 46 PM](https://user-images.githubusercontent.com/61069416/87890512-e80bf880-ca04-11ea-95c4-3f95298b6939.png)
 
@@ -87,10 +91,11 @@ The following images depict what a user sees visually upon logging into BookGeni
 ![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
 
 
-The most challenging part of the project for me was setting up validations and installing and learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server, but after much persistence and researching I was able to perservere and include flash messages in my project. 
+The most challenging part of the project for me was setting up validations and installing/learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server for what seemed like an eternity, but after much persistence and researching I was able to perservere and include flash messages in my project. Below are some images of the flash messages and the code behind them.
 
 
 ![Screen Shot 2020-07-18 at 11 44 08 PM](https://user-images.githubusercontent.com/61069416/87890296-df66f280-ca03-11ea-9622-f8e152867f33.png)
+
 
 ## 10 Helpful Tips
 
