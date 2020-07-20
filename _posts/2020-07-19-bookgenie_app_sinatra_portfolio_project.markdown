@@ -33,6 +33,8 @@ Remember, the convention is that models are singular when named and essentially 
 
 MVC stands for models, views and controllers. It is an architectural pattern that coders use to create order and apply separation of conerns in their projects. Following an MVC format also helps to better understand each other's work. Thankfully, running bundle install on the corneal gem was an easy way to get my file structure all in order before I started coding. 
 
+![Screen Shot 2020-07-19 at 10 41 02 PM](https://user-images.githubusercontent.com/61069416/87894519-fb24c580-ca10-11ea-971e-bdbf9c259fc4.png)
+
 CRUD stands for create, read, update and delete. They are four basic functionalities that coders use to make web apps and are essentially a set of CRUD actions that a user can make using Active Record.
 
 
@@ -55,35 +57,34 @@ This incredible table created by a Flatiron graduate, Jason Arnold, depicts the 
 
 Here are the common error messages that I received throughout the project that had to do with missing a slight / or a ' ' or had to do with redirecting to correct routes. 
 
-
-![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
-
-
-![Screen Shot 2020-07-18 at 4 15 54 PM](https://user-images.githubusercontent.com/61069416/87890507-e17d8100-ca04-11ea-9c16-86b503c757b3.png)
-
-![Screen Shot 2020-07-19 at 9 12 46 PM](https://user-images.githubusercontent.com/61069416/87890512-e80bf880-ca04-11ea-95c4-3f95298b6939.png)
-
 ![Screen Shot 2020-07-11 at 7 09 05 PM](https://user-images.githubusercontent.com/61069416/87890515-eb9f7f80-ca04-11ea-90a1-2e258d5bee44.png)
-
 
 ![Screen Shot 2020-07-14 at 2 19 02 PM](https://user-images.githubusercontent.com/61069416/87890523-ef330680-ca04-11ea-985c-2db0ea73d20e.png)
 
-If you have a Mac and are having issues with a corrupted database as I was, make sure to force quit ruby in your active monitor frequently throughout your coding sessions. Do this by typing ruby in the search engine when you click active monitor and click the x to the left of ruby. This will save you a lot of time on labs and this project!
+![Screen Shot 2020-07-14 at 1 06 41 PM](https://user-images.githubusercontent.com/61069416/87890511-e5a99e80-ca04-11ea-97e0-5248001f8232.png)
+
 ![Screen Shot 2020-07-18 at 1 47 28 PM](https://user-images.githubusercontent.com/61069416/87890301-e988f100-ca03-11ea-8fbb-27b6cc653bcb.png)
+
+If you have a Mac and are having issues with a corrupted database as I was, make sure to force quit ruby in your active monitor frequently throughout your coding sessions. Do this by typing ruby in the search engine when you click active monitor and click the x to the left of ruby. This will save you a lot of time on labs and this project!
+
+![Screen Shot 2020-07-13 at 9 00 18 PM](https://user-images.githubusercontent.com/61069416/87890473-b3983c80-ca04-11ea-9a1a-3d5c3a4611b9.png)
 
 
 This is how I coded the my post books route that gave me the most trouble. First I needed to create a new book object and pass in params or in my case, all of the attributes I had chosen for each book object. 
-![Screen Shot 2020-07-14 at 1 06 41 PM](https://user-images.githubusercontent.com/61069416/87890511-e5a99e80-ca04-11ea-97e0-5248001f8232.png)
+
+![Screen Shot 2020-07-19 at 9 12 46 PM](https://user-images.githubusercontent.com/61069416/87890512-e80bf880-ca04-11ea-95c4-3f95298b6939.png)
+
+
 
 
 The following images depict what a user sees visually upon logging into BookGenie, entering the home playlist page and how a user can create a book object by filling out a form. In order to bring my ideas for this project to life, much embedded ruby was used in the the view erb files, ruby code in the controllers, as well as css and html for styling purposes. 
+
+![Screen Shot 2020-07-18 at 4 15 54 PM](https://user-images.githubusercontent.com/61069416/87890507-e17d8100-ca04-11ea-9c16-86b503c757b3.png)
 
 
 ![Screen Shot 2020-07-16 at 3 02 27 PM](https://user-images.githubusercontent.com/61069416/87890536-fce88c00-ca04-11ea-8c8d-86b60971a101.png)
 
 ![Screen Shot 2020-07-18 at 1 47 51 PM](https://user-images.githubusercontent.com/61069416/87890299-e42ba680-ca03-11ea-8c02-06bf9e39772d.png)
-
-![Screen Shot 2020-07-13 at 9 00 18 PM](https://user-images.githubusercontent.com/61069416/87890473-b3983c80-ca04-11ea-9a1a-3d5c3a4611b9.png)
 
 
 The most challenging part of the project for me was setting up validations and installing and learning how to display sinatra flash messages. I had a lot of difficulties with getting flash messages to pop up on my web server, but after much persistence and researching I was able to perservere and include flash messages in my project. 
