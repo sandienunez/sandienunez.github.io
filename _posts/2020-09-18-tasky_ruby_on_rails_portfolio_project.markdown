@@ -36,7 +36,8 @@ Understanding the many to many relationships requirement was one of the more cha
 ### Joint Table & Has_many through Association 
 
 ![Screen Shot 2020-09-18 at 2 59 20 PM](https://user-images.githubusercontent.com/61069416/93635463-5139c900-f9c0-11ea-90e1-18603f153b97.png)
-`class User < ApplicationRecord
+
+```class User < ApplicationRecord
      has_many :comments
      has_many :commented_tasks, through: :comments, source: :tasks 
 	end 
@@ -49,40 +50,31 @@ end
 class Task < ApplicationRecord 
    has_many :comments, dependent: :destroy
    has_many :users, through: :comments
-end ` 
+end ``` 
 
 My initial confusion with my tables and not being sure which attributes would best fit my project, led me to dedicate a lot of my valuable project time that I could have used elsewhere to creating new columns and new tables, renaming tables, changing datetypes, renaming columns and deleting columns. On a positive note, this did help me grow very comfortable with all the create migration and rails generate commands. A helpful tip here was that I found an easy way to change or add new columns/or new table names for tables in VS code. These are the easy steps: 
 
 ### How to Change/Add new columns or new table names 
 
 1. Run `rake db:drop`
- `           =>     Dropped database 'db/development.sqlite3’ `
+ ```           =>     Dropped database 'db/development.sqlite3’ ```
 2. Manually delete sqlite file if not already deleted. 
-`          => Database 'db/test.sqlite3' does not exist` 
+```          => Database 'db/test.sqlite3' does not exist```
 3. Manually change/add new columns to the original tables that were created in the database files. You also have the option to use rails generate commands here to change/add new columns in the command terminal. Note, if you are going to replace names of exisiting tables, make sure to go back and change all corresponding controllers, models, views, forms, routes, ect., before you run the next command.
 4. Run `rails db:migrate` 
 5. You should see the new migrations created in your terminal. Check your schema.rb file to confirm that all your changes were saved to the database.
 6. If you receive traceback errors in the terminal, run `rails db:migrate:status` to point you to the root of your error.
-`           =>  database: db/development.sqlite3
+```           =>  database: db/development.sqlite3 ```
                                                    
- Status   Migration ID    Migration Name
---------------------------------------------------
-   up     20200831205933  Devise create users
-   up     20200831212748  Create tasks
-   up     20200831214348  Create comments
-  down    20200831220113  Create daily checkins
-  down    20200901195911  Rename vitamins to supplements
-  down    20200903205534  Add full name to users
-  down    20200904030006  Add omniauth to users
-  down    20200907220558  Add priority ranking to tasks
-  down    20200908192007  Add date to tasks 
-   `
-	In this example above, the error was refering to my RenameVitaminsToSupplements file where I had initially changed the attribute name of vitamins to supplements. Since I had already removed the supplements attribute from the table in Step 3, I had to delete this file due to old attributes. This removed my error.
+![Screen Shot 2020-09-18 at 8 41 54 PM](https://user-images.githubusercontent.com/61069416/93655078-6c6ffd00-f9ef-11ea-95e3-43438fa0a339.png)
+
+In this example above, the error was refering to my RenameVitaminsToSupplements file where I had initially changed the attribute name of vitamins to supplements. Since I had already removed the supplements attribute from the table in Step 3, I had to delete this file due to old attributes. This solved my terminal error.
 7. For traceback errors in the terminal: 
          * You may still have old attributes that you are no longer using somewhere in an existing file. Double check that you have deleted any old migrate rename files in your database folder where you no longer have those attributes you had initially renamed. If this is the case, delete that file. 
          * Double check that you have changed the name of your model/controller if you were replacing the name of a table.
 
 
+### Rails Associations
 
 I suggest that you give yourself a few days to read and take notes on the [Active Record Associations documentation](https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association)  and take the time to fully comprehend the 6 different types of Rails associations and know how they are used. After understanding the fundamentals, now be confident when you choose what models relationships you will create from your tables. Make sure to print out or copy and paste all the rails project requirements in a seperate google doc so that you can easily refer back to it when making decisions for how to carry out your project. Another helpful tool that I used throughout this app build was the Quiver app. It's a notetaking app that stores all your code and text based on whatever coding language (has over 120 languages) you are working with. I downloaded Quiver on my Mac in the app store. It is one of the best $10 investments I have made. Using the Quiver app made it easy to refer back to all my Ruby on rails notes from this module. 
 
@@ -116,9 +108,7 @@ end
 class DailyRoutine < ApplicationRecord
     belongs_to :user, optional: true 
     has_many :users
-end
-
-```
+end```
 
 After studying the assocations and understanding the overall flow of my tasky app, this was my final diagram for my model relationships. Notice how different they are compared to my first attempt and how important it is to review the proper documentation before starting. 
 ![Screen Shot 2020-09-18 at 12 53 30 PM](https://user-images.githubusercontent.com/61069416/93635796-e63cc200-f9c0-11ea-8249-f5e93353729e.png)
