@@ -319,6 +319,57 @@ class TasksController < ApplicationController
 end 		
 ```
 		
+### Strong Params
+Your **strong params** is needed in Active Model mass assignments when mass assigning data and is located after the private method you have defined towards the bottom of the Action Controller. It's important you are very careful when deciding which attributes will and will not be exposed to prevent any risk of showing attributes that you want to keep hidden by whitelisting the selected ones in the strong params. Below is how I implemented my strong params:
+
+```
+ private
+
+    def task_params
+        params.require(:task).permit(:date, :"date(2i)", :priority_ranking, :task_name, :action_one, :action_two, :action_three, :deadline, :estimate_time_to_finish_task, :user_id)
+    end
+```
+
+### Partials 
+If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
+
+```
+  <% if !@comment.task %>
+    <%= f.label :task_name %>
+     <%= f.collection_select :task_id, Task.all, :id, :task_name %>
+     <% else %>
+    <%= f.hidden_field :task_id %>
+    <% end %>
+<br>
+<br>
+     <%= f.label :message %>
+     <%= f.text_area :message %>
+<br>
+<br>
+
+    <%= f.submit "Save" %>
+```
+		
+And this is how I referenced the partial in my comments edit view: 
+		
+```
+<h2> Edit Comment. </h2>
+		
+<%= form_for(@comment) do |f| %>
+    <%= render partial: 'comments/form', locals: {f: f} %>
+<% end %>
+
+```
+
+My partial in my comments new view: 
+
+```
+<h2> Create a Comment. </h2>
+
+<%= form_for @comment do |f| %>
+     <%= render partial: 'comments/form', locals: {f: f} %>
+<% end %>
+```
 
 ### Undefined Method Error
 	
@@ -394,62 +445,13 @@ A user can create, edit and delete the comments they've posted on their tasks. T
 3. Keep it simple, then create more models and attributes later. Focus on meeting the requirements first.
 4. Save the styling until last. It can be tempting to spend time making your app look beautiful and internet worthy but it's not a helpful move if you are still degugging errors and completing the requirements. 
 5. Make sure your user can create, edit, update and delete objects on each of your paths without a problem. Make sure all of your buttons are properly functioning.
-6. Make sure you have whitelisted or permitted all your necessary attributes from your table into your **strong params**. Your strong params is needed in Active Model mass assignments when mass assigning data and is located after the private method you have defined towards the bottom of the Action Controller. It's important you are very careful when deciding which attributes will and will not be exposed to prevent any risk of showing attributes that you want to keep hidden by whitelisting the selected ones in the strong params. Below is how I implemented my strong params:
-
-```
- private
-
-    def task_params
-        params.require(:task).permit(:date, :"date(2i)", :priority_ranking, :task_name, :action_one, :action_two, :action_three, :deadline, :estimate_time_to_finish_task, :user_id)
-    end
-```
-
-
+6. Make sure you have whitelisted or permitted all your necessary attributes from your table into your **strong params**. 
 7. Remember that **Model names** are **singular** and everything else (controllers, routes, views) is pluralized.
 8. Take many walks and breaks from your computer to alleviate any back pain and eye strain.
 9. Schedule time each morning to pray or medidate without fail. The more you give thanks to God for the opportunity to code and create amazing coding apps the more you will be at peace and can joyfully keep coding all day long. 
 10. Clean and concise code, does not always mean better code. Make sure that if you are refactoring to reduce the quantity of code, that your methods can still be executed and that your overall app flow and routes are still functioning.
 
-## Partials 
-If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
 
-```
-  <% if !@comment.task %>
-    <%= f.label :task_name %>
-     <%= f.collection_select :task_id, Task.all, :id, :task_name %>
-     <% else %>
-    <%= f.hidden_field :task_id %>
-    <% end %>
-<br>
-<br>
-     <%= f.label :message %>
-     <%= f.text_area :message %>
-<br>
-<br>
-
-    <%= f.submit "Save" %>
-```
-		
-And this is how I referenced the partial in my comments edit view: 
-		
-```
-<h2> Edit Comment. </h2>
-		
-<%= form_for(@comment) do |f| %>
-    <%= render partial: 'comments/form', locals: {f: f} %>
-<% end %>
-
-```
-
-My partial in my comments new view: 
-
-```
-<h2> Create a Comment. </h2>
-
-<%= form_for @comment do |f| %>
-     <%= render partial: 'comments/form', locals: {f: f} %>
-<% end %>
-```
 
 ## In the Future
 
