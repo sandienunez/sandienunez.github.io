@@ -316,10 +316,11 @@ class TasksController < ApplicationController
             redirect_to '/'
         end 
      end
-		end 
-		```
+end 		
+```
 		
-	### Undefined Method Error
+
+### Undefined Method Error
 	
 The last error that I ran into and was stuck on for a while was this NoMethodError in my DailyRoutines controller that said there was an undefined method "daily_routines" for the User object. To fix this error, I simply needed to make sure that I established the has_many association between user and daily_routines were a user has_many :daily_routines and a DailyRoutine has_many users. Somewhere between rearranging my associations, I had forgotten to add this essential association back. 
 
