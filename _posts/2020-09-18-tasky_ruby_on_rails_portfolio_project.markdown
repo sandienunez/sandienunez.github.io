@@ -11,7 +11,9 @@ permalink:  tasky_ruby_on_rails_portfolio_project
 ![tasky2](https://user-images.githubusercontent.com/61069416/93535003-1e39fb80-f914-11ea-8e65-522a3f3fd8f9.png)
 ## Idea for App
 
-Tasky allows users to create, edit and delete customized daily tasks, daily routines and daily journals. Tasky's mission is to serve as a task management system for adults and children with ADD and ADHD (Attention-deficit/hyperactivity disorder) that struggle with managing their time and responsibilities. Tasky helps you thrive everyday of your life! The goal of this app is to provide an easy and user friendly experience paired with a sleek User Interface design that exceptionally helps people organize their priorities and find a calm balance in their daily lives. This is the first ever online ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
+Tasky allows users to create, edit and delete customized daily tasks, daily routines and daily journals. Tasky's mission is to serve as a task management system for adults and children with ADD and ADHD (Attention-deficit/hyperactivity disorder) that struggle with managing their time and responsibilities. Tasky helps you thrive everyday of your life! The goal of this app is to provide an easy and user friendly experience paired with a sleek User Interface design that exceptionally helps people organize their priorities and find a calm balance in their daily lives. 
+
+This is the first ever online ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
 
 Let tasky take your day to infinity and beyond!
 
@@ -28,10 +30,9 @@ When planning how I would carry out each feature that I wanted tasky to include 
 * The "through" part of the has_many through includes at least one user submittable attribute, that is to say, some attribute other than its foreign keys that can be submitted by the app's user (attribute_name e.g. ingredients.quantity)
 
 This was my original attempt at mapping out my tables. 
-
 ![Screen Shot 2020-09-01 at 12 32 30 PM](https://user-images.githubusercontent.com/61069416/93636319-b6da8500-f9c1-11ea-8198-d3ebf95f55a5.png)
 
-Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the has_many through association. A **joint table** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: ``` comments.message```
+Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the has_many through association. A **joint table** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: ` comments.message`
 
 ### Joint Table & Has_many through Association 
 
@@ -59,14 +60,22 @@ My initial confusion with my tables and not being sure which attributes would be
 ### How to Change/Add new columns or new table names 
 
 1. Run `rake db:drop`
- ```           =>     Dropped database 'db/development.sqlite3’ ```
+ ``` 
+ rake db:drop
+ =>     Dropped database 'db/development.sqlite3’
+ ```
 2. Manually delete sqlite file if not already deleted. 
-```          => Database 'db/test.sqlite3' does not exist```
+```         
+=> Database 'db/test.sqlite3' does not exist
+```
 3. Manually change/add new columns to the original tables that were created in the database files. You also have the option to use rails generate commands here to change/add new columns in the command terminal. Note, if you are going to replace names of exisiting tables, make sure to go back and change all corresponding controllers, models, views, forms, routes, ect., before you run the next command.
 4. Run `rails db:migrate` 
 5. You should see the new migrations created in your terminal. Check your schema.rb file to confirm that all your changes were saved to the database.
-6. If you receive traceback errors in the terminal, run `rails db:migrate:status` to point you to the root of your error.
-```           =>  database: db/development.sqlite3 ```
+6. If you receive traceback errors in the terminal, run `rails db:migrate:status ` to point you to the root of your error.
+```
+rails db:migrate:status    
+=>  database: db/development.sqlite3
+```
                                                    
 ![Screen Shot 2020-09-18 at 8 41 54 PM](https://user-images.githubusercontent.com/61069416/93655078-6c6ffd00-f9ef-11ea-95e3-43438fa0a339.png)
 
@@ -82,7 +91,8 @@ I suggest that you give yourself a few days to read and take notes on the [Activ
 
 Here are all my model associations I created for each class. 
 
-```class User < ApplicationRecord
+```
+class User < ApplicationRecord
      has_many :comments
      has_many :commented_tasks, through: :comments, source: :tasks #tasks they commented on 
      has_many :tasks #tasks that user has created 
@@ -110,7 +120,8 @@ end
 class DailyRoutine < ApplicationRecord
     belongs_to :user, optional: true 
     has_many :users
-end```
+end
+```
 
 After studying the assocations and understanding the overall flow of my tasky app, this was my final diagram for my model relationships. Notice how different they are compared to my first attempt and how important it is to review the proper documentation before starting. 
 ![Screen Shot 2020-09-18 at 12 53 30 PM](https://user-images.githubusercontent.com/61069416/93635796-e63cc200-f9c0-11ea-8249-f5e93353729e.png)
@@ -126,11 +137,11 @@ Now that my models were established, it was time to generate my controllers and 
 
 Here are some helpful notes to keep in mind with understanding GET and POST requests:
 
-**Browser —> sends HTTP request —> to webservers**
+`Browser —> sends HTTP request —> to webservers` 
 
 * **HTTP requests**  = have verbs
 
-* **HTTP verbs**: GET POST PUT PATCH DELETE 
+* **HTTP verbs**: `GET POST PUT PATCH DELETE` 
          —> describe nature of request 
 				 
 * **GET Request** = when your browser is asking for info
@@ -148,30 +159,38 @@ The rails app then goes to the routes file and asks **two questions:**
 
 **4 Steps for Request Cycle:**
 
-1. Browser makes a GET request to http://localhost:3000/register 
+1. Browser makes a GET request to `http://localhost:3000/register `
 2. Rails app now loaded the Rails router 
 3. It found the match for requested URL
 4. It directed the request to corresponding controller action
-5. By going to http://localhost:3000/register we’ve allowed the user to trigger this new method code in Users controller.
+5. By going to `http://localhost:3000/register` we’ve allowed the user to trigger this new method code in Users controller.
 
 
 ### Generating Paths and URLs from Code
 
 The Rails router job is to check and match URLs to the respective controller's action, or to a Rack application. A router can also make paths and URLs so we don't have to hardcode. For example in your routes config.rb file we could have:
-`get '/tasks/:id', to: 'tasks#show', as: 'task' `
+```
+get '/tasks/:id', to: 'tasks#show', as: 'task' 
+
+```
 
 In the Tasks controller: 
-`@task = Task.find(params[:id])`
+```
+@task = Task.find(params[:id])
+```
 
 And in the Tasks view:
-`<%= button_to "Delete Task", task_path(@task), method: :delete, data: {confirm: "Are you sure you want to delete this task?"} %>`
+```
+<%= button_to "Delete Task", task_path(@task), method: :delete, data: {confirm: "Are you sure you want to delete this task?"} %>
+```
 
 Next, the router makes this path `http://localhost:3000/tasks/1` which makes it much easier to read your code. 
 
 
 The routes for your Rails app are always located in the config/routes.rb file. I learned that the `Rails.application.routes.draw do ... end` block found in this file cannot be deleted as it is necessary to form the scope for the router DSL. In my application, I utlized **Resource routing** which helps you establish your routes for the  `index, show, new, edit, create, update and destroy` actions in one line of code as opposed to seperate routes. My Resource routes can be seen below:
 
-``` Rails.application.routes.draw do
+``` 
+Rails.application.routes.draw do
  
   root to: 'application#index'
   devise_for :users, :controllers => {registrations: 'registrations', omniauth_callbacks: 'callbacks'}
@@ -205,7 +224,7 @@ This was my favorite part of this project because it challenged me to think outs
 
 I created a scope method called `priority_order` that used the Active Record `order` method to sort all my tasks on a descending scale from 1-6. A user can rank their Daily Tasks from Highest to Lowest Priority. Where 6 is the highest priority and 1 is the lowest priority. 
 
-`
+```
 class Task < ApplicationRecord
    scope :priority_order, -> { order(priority_ranking: :desc)}  
 end
@@ -220,7 +239,7 @@ end
          end 
     end
 	end 
-  `
+  ```
 
 Below is my **task index view** displaying my scope method in action:
 
@@ -240,13 +259,16 @@ Nested resources treat model objects as URLs are essential to using a resourcefu
  
 This is how I implemented the nested resources requirement for tasky in my config.rb file. 
 
-`resources :tasks do
+```
+resources :tasks do
   resources :comments, only: [:index, :new, :create, :show] 
-end` 
+end
+```
 
 Below is how I added the logic for the parent resource, tasks, and the child resource, comments in my controller. 
 
 ```
+
 class TasksController < ApplicationController
      def show 
         if user_signed_in?
@@ -274,12 +296,13 @@ class TasksController < ApplicationController
 		
 	### Undefined Method Error
 	
-An error that I frequently ran into was this NoMethodError in my DailyRoutines controller that said there was an undefined method "daily_routines" for the User object. To fix this error, I simply needed to make sure that I established the has_many association between user and daily_routines were a user has_many :daily_routines and a DailyRoutine has_many users. Somewhere between rearranging my associations, I had forgotten to add this essential association back. 
+The last error that I ran into and was stuck on for a while was this NoMethodError in my DailyRoutines controller that said there was an undefined method "daily_routines" for the User object. To fix this error, I simply needed to make sure that I established the has_many association between user and daily_routines were a user has_many :daily_routines and a DailyRoutine has_many users. Somewhere between rearranging my associations, I had forgotten to add this essential association back. 
 
 ![Screen Shot 2020-09-17 at 8 14 43 PM](https://user-images.githubusercontent.com/61069416/93652914-c0291900-f9e4-11ea-98d9-1387efb74aa3.png)
 
 
-```class User < ApplicationRecord
+```
+class User < ApplicationRecord
 
          has_many :daily_routines
 	end 
@@ -288,7 +311,7 @@ An error that I frequently ran into was this NoMethodError in my DailyRoutines c
     has_many :users
 end
 
-	```
+```
 
 ### Create Tasks
 
@@ -325,7 +348,7 @@ Here a user can track ADD symptoms, gain inspiration and create long-term goals 
 
 ### Create Comments
 
-A user can create, edit and delete comments they make on tasks they made or tasks from other tasky penguins in the community. 
+A user can create, edit and delete the comments they've posted on their tasks. They can also comment on tasks that belong to other tasky penguins in the community. 
 
 ![Screen Shot 2020-09-17 at 9 47 29 PM](https://user-images.githubusercontent.com/61069416/93545829-6b779680-f92f-11ea-982b-6931d5d55e2f.png)
 
@@ -340,20 +363,21 @@ A user can create, edit and delete comments they make on tasks they made or task
 
 
 ## 10 Helpful Tips
+
 1. Each day I made multiple to-do lists that included goals that covered what exactly I needed to tackle that day. Including specific errors I needed to debug or questions I needed to ask my cohort lead and classmates. Every time I finished a task, I crossed it out. This helped me visually see all that I had left to accomplish.
 2. Make multiple users, don't just use one to test out your project. Doing this, helped me identify various bugs, errors issues that were displayed from user to user in my views. 
 3. Keep it simple, then create more models and attributes later. Focus on meeting the requirements first.
 4. Save the styling until last. It can be tempting to spend time making your app look beautiful and internet worthy but it's not a helpful move if you are still degugging errors and completing the requirements. 
 5. Make sure your user can create, edit, update and delete objects on each of your paths without a problem. Make sure all of your buttons are properly functioning.
 6. Make sure you have whitelisted or permitted all your necessary attributes from your table into your **strong params**. Your strong params is needed in Active Model mass assignments when mass assigning data and is located after the private method you have defined towards the bottom of the Action Controller. It's important you are very careful when deciding which attributes will and will not be exposed to prevent any risk of showing attributes that you want to keep hidden by whitelisting the selected ones in the strong params. Below is how I implemented my strong params:
-`
+```
  private
 
     def task_params
         params.require(:task).permit(:date, :"date(2i)", :priority_ranking, :task_name, :action_one, :action_two, :action_three, :deadline, :estimate_time_to_finish_task, :user_id)
     end
 
-`
+```
 
 7. Remember that **Model names** are **singular** and everything else (controllers, routes, views) is pluralized.
 8. Take many walks and breaks from your computer to alleviate any back pain and eye strain.
@@ -362,7 +386,6 @@ A user can create, edit and delete comments they make on tasks they made or task
 
 ## Partials 
 If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
-
 ```
   <% if !@comment.task %>
     <%= f.label :task_name %>
@@ -383,10 +406,10 @@ If it is appropriate to refactor, place the repeating code in a partial file in 
 And this is how I referenced the partial in my comments edit view: 
 		
 ```
-		<h2> Edit Comment. </h2>
+<h2> Edit Comment. </h2>
 		
-		<%= form_for(@comment) do |f| %>
-     <%= render partial: 'comments/form', locals: {f: f} %>
+<%= form_for(@comment) do |f| %>
+    <%= render partial: 'comments/form', locals: {f: f} %>
 <% end %>
 
 ```
