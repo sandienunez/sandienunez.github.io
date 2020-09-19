@@ -127,6 +127,19 @@ end
 After studying the assocations and understanding the overall flow of my tasky app, this was my final diagram for my model relationships. Notice how different they are compared to my first attempt and how important it is to review the proper documentation before starting. 
 ![Screen Shot 2020-09-18 at 12 53 30 PM](https://user-images.githubusercontent.com/61069416/93635796-e63cc200-f9c0-11ea-8249-f5e93353729e.png)
 
+## Restful Routes and CRUD Actions
+
+REST => Representation State Transfer => set of conventions for structuring our ROUTES and mapping them to CRUD actions (Create, Read, Update, Delete).
+
+  | METHOD | ROUTE | CONTROLLER ACTION   | Description |
+| ------------- |-------------| ----------- | ------------------- |
+| GET  |  /tasks | #index | Show all tasks | 
+| POST | /tasks | #create | Create a new task|
+| GET  | /tasks/new | #new | Render form for creating a new task |
+| GET  | /tasks/:id/edit | #edit | Render form for editing a task  |
+| GET  | /tasks/:id | #show | Show a single task |
+| PATCH | /tasks/:id | #update | Update a task |
+| DELETE | /tasks/:id | #destroy | DELETE a task |
 
 ## Coding
 
