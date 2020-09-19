@@ -409,6 +409,7 @@ A huge thanks to my cohort lead, Dominique, and my supportive classmates and the
 
 I am indebted to God's grace as He sustained me with his love, strength and heart during this entire journey. He led me beside still waters and casted away all my fears during this project. I am so grateful for you Lord!
 
+## Takeaways
 Overall, this Rails application challenged me, pushed me farther then my limits and helped me grow as a software developer. It also made me fall more in love with the flexible nature of Ruby and how magical the world of Rails is. I am very proud of this project and hope that many people struggling with ADD can utilize all the features of tasky to help them dominate their day. 
 
 
