@@ -57,7 +57,7 @@ My initial confusion with my tables and not being sure which attributes would be
 ### How to Change/Add new columns or new table names 
 
 1. Run `rake db:drop`
-`            =>     Dropped database 'db/development.sqlite3’ `
+ `           =>     Dropped database 'db/development.sqlite3’ `
 2. Manually delete sqlite file if not already deleted. 
 `          => Database 'db/test.sqlite3' does not exist` 
 3. Manually change/add new columns to the original tables that were created in the database files. You also have the option to use rails generate commands here to change/add new columns in the command terminal. Note, if you are going to replace names of exisiting tables, make sure to go back and change all corresponding controllers, models, views, forms, routes, ect., before you run the next command.
