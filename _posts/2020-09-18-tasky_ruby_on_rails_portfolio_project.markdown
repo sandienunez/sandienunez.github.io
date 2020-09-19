@@ -13,7 +13,7 @@ permalink:  tasky_ruby_on_rails_portfolio_project
 
 Tasky allows users to create, edit and delete customized daily tasks, daily routines and daily journals. Tasky's mission is to serve as a task management system for adults and children with ADD and ADHD (Attention-deficit/hyperactivity disorder) that struggle with managing their time and responsibilities. Tasky helps you thrive everyday of your life! The goal of this app is to provide an easy and user friendly experience paired with a sleek User Interface design that exceptionally helps people organize their priorities and find a calm balance in their daily lives. 
 
-This is the *first ever online* ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
+This is the **first ever online** ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
 
 Let tasky take your day to infinity and beyond!
 
@@ -58,14 +58,15 @@ My initial confusion with my tables and not being sure which attributes would be
 
 ### How to Change/Add new columns or new table names 
 
+
 1. Run `rake db:drop`
  ``` 
  rake db:drop
- =>     Dropped database 'db/development.sqlite3’
+      =>  Dropped database 'db/development.sqlite3’
  ```
 2. Manually delete sqlite file if not already deleted. 
 ```         
-=> Database 'db/test.sqlite3' does not exist
+      =>  Database 'db/test.sqlite3' does not exist
 ```
 3. Manually change/add new columns to the original tables that were created in the database files. You also have the option to use rails generate commands here to change/add new columns in the command terminal. Note, if you are going to replace names of exisiting tables, make sure to go back and change all corresponding controllers, models, views, forms, routes, ect., before you run the next command.
 4. Run `rails db:migrate` 
