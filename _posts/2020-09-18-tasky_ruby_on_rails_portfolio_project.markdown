@@ -59,6 +59,7 @@ My initial confusion with my tables and not being sure which attributes would be
 ### How to Change/Add new columns or new table names 
 
 
+
 1. Run `rake db:drop`
  ``` 
  rake db:drop
