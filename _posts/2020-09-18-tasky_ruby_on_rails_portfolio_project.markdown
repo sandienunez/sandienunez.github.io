@@ -135,23 +135,22 @@ Three importants components of code to keep in mind when working with this frame
 The three main parts of the Rails framework are as follows:
 * ActiveRecord
 * ActionController
-* ActionView
-      * URL helpers
-      * 
+* ActionView = Made up of URL helpers
+      
 An example of dynamic URL helpers are the route helper methods. If we were to change up the routes, in many cases our code would not have to be altered at all because the route helpers are methods and not strings. Although, they cannot be used in our models. Below are some examples of how route helpers can be easy to read, very clean and simple code to add to our controllers and views. 
 	
-            ```
-						task_path(@task)
+```
+task_path(@task)
 						 
-						 or
+or
 						 
-						 task_path(task, opt_in: true)
-			      ```
+task_path(task, opt_in: true)
+```
             
+						
+						
 ### Request and Response Flow
-
 ![Screen Shot 2020-09-18 at 4 13 15 PM](https://user-images.githubusercontent.com/61069416/93641230-f0af8980-f9c9-11ea-8152-2d2957820d79.png)
-
 Now that my models were established, it was time to generate my controllers and define my routes. I hit a roadbloack with numerous routing errors for a few days and with grasping how my routes were connected to my server, forms and controllers. These two diagrams, located above and below, helped me better understand the cycle. First, the brower makes HTTP requests to webservers, and then loads the Rails router which searches for matching URLs. The rails app asks the router to match it to the corresponding controller action methods. We can also say that the specific request is sent to the controller's matching action method. The views are then rendered according to the view name that matches the correct controller name. 
 ![rails_routes](https://user-images.githubusercontent.com/61069416/93636854-9d860880-f9c2-11ea-81a2-8ada42365bea.png)
 
@@ -241,7 +240,7 @@ end
 ```
 
 
-### What's a Scope Method?
+### Scope Method Adventures
 
 We were asked to create a custom scope method for this project. More specifically we needed a:
 * Class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
