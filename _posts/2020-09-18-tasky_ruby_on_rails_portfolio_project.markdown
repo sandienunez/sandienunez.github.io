@@ -395,13 +395,13 @@ A user can create, edit and delete the comments they've posted on their tasks. T
 4. Save the styling until last. It can be tempting to spend time making your app look beautiful and internet worthy but it's not a helpful move if you are still degugging errors and completing the requirements. 
 5. Make sure your user can create, edit, update and delete objects on each of your paths without a problem. Make sure all of your buttons are properly functioning.
 6. Make sure you have whitelisted or permitted all your necessary attributes from your table into your **strong params**. Your strong params is needed in Active Model mass assignments when mass assigning data and is located after the private method you have defined towards the bottom of the Action Controller. It's important you are very careful when deciding which attributes will and will not be exposed to prevent any risk of showing attributes that you want to keep hidden by whitelisting the selected ones in the strong params. Below is how I implemented my strong params:
+
 ```
  private
 
     def task_params
         params.require(:task).permit(:date, :"date(2i)", :priority_ranking, :task_name, :action_one, :action_two, :action_three, :deadline, :estimate_time_to_finish_task, :user_id)
     end
-
 ```
 
 7. Remember that **Model names** are **singular** and everything else (controllers, routes, views) is pluralized.
