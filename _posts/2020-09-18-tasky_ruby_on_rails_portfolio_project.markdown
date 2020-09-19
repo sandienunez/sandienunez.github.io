@@ -411,6 +411,7 @@ A user can create, edit and delete the comments they've posted on their tasks. T
 
 ## Partials 
 If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
+
 ```
   <% if !@comment.task %>
     <%= f.label :task_name %>
