@@ -1,9 +1,10 @@
 ---
 layout: post
 title:      "tasky: Ruby on Rails Portfolio Project "
-date:       2020-09-18 23:35:31 +0000
+date:       2020-09-18 19:35:32 -0400
 permalink:  tasky_ruby_on_rails_portfolio_project
 ---
+
 
 ![taskylogo](https://user-images.githubusercontent.com/61069416/93532739-94882f00-f90f-11ea-91a3-932ca8595d23.png)
 
@@ -30,7 +31,7 @@ This was my original attempt at mapping out my tables.
 
 ![Screen Shot 2020-09-01 at 12 32 30 PM](https://user-images.githubusercontent.com/61069416/93636319-b6da8500-f9c1-11ea-8198-d3ebf95f55a5.png)
 
-Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the has_many through association. A** joint table ** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: ` comments.message`
+Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the has_many through association. A **joint table** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: ` comments.message`
 
 ### Has_many through Association 
 
