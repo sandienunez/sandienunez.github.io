@@ -229,7 +229,7 @@ And in the Tasks view:
 Next, the router makes this path `http://localhost:3000/tasks/1` which makes it much easier to read your code. 
 
 
-The routes for your Rails app are always located in the config/routes.rb file. I learned that the `Rails.application.routes.draw do ... end` block found in this file cannot be deleted as it is necessary to form the scope for the router DSL. In my application, I utlized **Resource routing** which helps you establish your routes for the  `index, show, new, edit, create, update and destroy` actions in one line of code as opposed to seperate routes. My Resource routes can be seen below:
+The routes for your Rails app are always located in the config/routes.rb file. I learned that the `Rails.application.routes.draw do ... end` block found in this file cannot be deleted as it is necessary to form the scope for the router DSL. In my application, I utilized **Resource routing** which helps you establish your routes for the  `index, show, new, edit, create, update and destroy` actions in one line of code as opposed to seperate routes. My Resource routes can be seen below:
 
 ``` 
 Rails.application.routes.draw do
