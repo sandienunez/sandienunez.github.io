@@ -331,12 +331,12 @@ The last error that I ran into and was stuck on for a while was this NoMethodErr
 class User < ApplicationRecord
 
          has_many :daily_routines
-	end 
-	
-	class DailyRoutine < ApplicationRecord
+end 
+```	
+```
+class DailyRoutine < ApplicationRecord
     has_many :users
 end
-
 ```
 
 ### Create Tasks
