@@ -78,8 +78,8 @@ rails db:migrate:status
 ```
                                                    
 ![Screen Shot 2020-09-18 at 8 41 54 PM](https://user-images.githubusercontent.com/61069416/93655078-6c6ffd00-f9ef-11ea-95e3-43438fa0a339.png)
+In this example above, the error was refering to my `RenameVitaminsToSupplements` file where I had initially changed the attribute name of vitamins to supplements. Since I had already previously removed the supplements attribute from the table in Step 3, I had to delete this `RenameVitaminsToSupplements` file due to old attributes. This solved my terminal error.
 
-In this example above, the error was refering to my RenameVitaminsToSupplements file where I had initially changed the attribute name of vitamins to supplements. Since I had already removed the supplements attribute from the table in Step 3, I had to delete this file due to old attributes. This solved my terminal error.
 7. For traceback errors in the terminal: 
          * You may still have old attributes that you are no longer using somewhere in an existing file. Double check that you have deleted any old migrate rename files in your database folder where you no longer have those attributes you had initially renamed. If this is the case, delete that file. 
          * Double check that you have changed the name of your model/controller if you were replacing the name of a table.
