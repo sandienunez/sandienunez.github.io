@@ -36,8 +36,7 @@ Understanding the many to many relationships requirement was one of the more cha
 ### Joint Table & Has_many through Association 
 
 ![Screen Shot 2020-09-18 at 2 59 20 PM](https://user-images.githubusercontent.com/61069416/93635463-5139c900-f9c0-11ea-90e1-18603f153b97.png)
-
-```class User < ApplicationRecord
+`class User < ApplicationRecord
      has_many :comments
      has_many :commented_tasks, through: :comments, source: :tasks 
 	end 
@@ -50,7 +49,7 @@ end
 class Task < ApplicationRecord 
    has_many :comments, dependent: :destroy
    has_many :users, through: :comments
-end ```
+end ` 
 
 My initial confusion with my tables and not being sure which attributes would best fit my project, led me to dedicate a lot of my valuable project time that I could have used elsewhere to creating new columns and new tables, renaming tables, changing datetypes, renaming columns and deleting columns. On a positive note, this did help me grow very comfortable with all the create migration and rails generate commands. A helpful tip here was that I found an easy way to change or add new columns/or new table names for tables in VS code. These are the easy steps: 
 
@@ -61,7 +60,7 @@ My initial confusion with my tables and not being sure which attributes would be
 2. Manually delete sqlite file if not already deleted. 
 `          => Database 'db/test.sqlite3' does not exist` 
 3. Manually change/add new columns to the original tables that were created in the database files. You also have the option to use rails generate commands here to change/add new columns in the command terminal. Note, if you are going to replace names of exisiting tables, make sure to go back and change all corresponding controllers, models, views, forms, routes, ect., before you run the next command.
-4. Run ` rails db:migrate`.
+4. Run `rails db:migrate` 
 5. You should see the new migrations created in your terminal. Check your schema.rb file to confirm that all your changes were saved to the database.
 6. If you receive traceback errors in the terminal, run `rails db:migrate:status` to point you to the root of your error.
 `           =>  database: db/development.sqlite3
