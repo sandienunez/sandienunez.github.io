@@ -403,10 +403,12 @@ A user can create, edit and delete the comments they've posted on their tasks. T
         params.require(:task).permit(:date, :"date(2i)", :priority_ranking, :task_name, :action_one, :action_two, :action_three, :deadline, :estimate_time_to_finish_task, :user_id)
     end
 ```
-  7.Remember that **Model names** are **singular** and everything else (controllers, routes, views) is pluralized.
-  8.Take many walks and breaks from your computer to alleviate any back pain and eye strain.
-  9.Schedule time each morning to pray or medidate without fail. The more you give thanks to God for the opportunity to code and create amazing coding apps the more you will be at peace and can joyfully keep coding all day long. 
-  10.Clean and concise code, does not always mean better code. Make sure that if you are refactoring to reduce the quantity of code, that your methods can still be executed and that your overall app flow and routes are still functioning.
+
+
+7. Remember that **Model names** are **singular** and everything else (controllers, routes, views) is pluralized.
+8. Take many walks and breaks from your computer to alleviate any back pain and eye strain.
+9. Schedule time each morning to pray or medidate without fail. The more you give thanks to God for the opportunity to code and create amazing coding apps the more you will be at peace and can joyfully keep coding all day long. 
+10. Clean and concise code, does not always mean better code. Make sure that if you are refactoring to reduce the quantity of code, that your methods can still be executed and that your overall app flow and routes are still functioning.
 
 ## Partials 
 If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
