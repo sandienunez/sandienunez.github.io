@@ -13,7 +13,7 @@ permalink:  tasky_ruby_on_rails_portfolio_project
 
 Tasky allows users to create, edit and delete customized daily tasks, daily routines and daily journals. Tasky's mission is to serve as a task management system for adults and children with ADD and ADHD (Attention-deficit/hyperactivity disorder) that struggle with managing their time and responsibilities. Tasky helps you thrive everyday of your life! The goal of this app is to provide an easy and user friendly experience paired with a sleek User Interface design that exceptionally helps people organize their priorities and find a calm balance in their daily lives. 
 
-This is the first ever online ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
+This is the *first ever online* ADD Task Management system that not only helps you prioritize your tasks and task deadlines but helps you track your ADD symptoms, medications, supplements and more. The Daily Journal feature helps you plan your spiritual, psychological, biological and social long-term goals. The user also has the ability to seamlessly create custom Daily Routines that gives you a visual flow and timeline of what you need to accomplish each day.
 
 Let tasky take your day to infinity and beyond!
 
@@ -30,9 +30,10 @@ When planning how I would carry out each feature that I wanted tasky to include 
 * The "through" part of the has_many through includes at least one user submittable attribute, that is to say, some attribute other than its foreign keys that can be submitted by the app's user (attribute_name e.g. ingredients.quantity)
 
 This was my original attempt at mapping out my tables. 
+
 ![Screen Shot 2020-09-01 at 12 32 30 PM](https://user-images.githubusercontent.com/61069416/93636319-b6da8500-f9c1-11ea-8198-d3ebf95f55a5.png)
 
-Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the has_many through association. A **joint table** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: ` comments.message`
+Understanding the many to many relationships requirement was one of the more challenging aspects of the entire project for me because I could not figure out how to best implement my joint table for the `has_many through association.` A **joint table** or joint model is a special table indirectly made by the **through** part of a has_many through association in the database. It helps join together a many to many relationship between two models and contains the two foreign keys from those two models. In the example below, the Comment model is my joint table and the two foreign keys included in this table are the user_id and task_id. My Comment model also includes at least one user submittable attribute, the message attribute, in addition the foreign keys that the user can submit such as: `comments.message`
 
 ### Joint Table & Has_many through Association 
 
