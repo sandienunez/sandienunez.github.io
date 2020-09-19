@@ -80,14 +80,14 @@ rails db:migrate:status
 ![Screen Shot 2020-09-18 at 8 41 54 PM](https://user-images.githubusercontent.com/61069416/93655078-6c6ffd00-f9ef-11ea-95e3-43438fa0a339.png)
 In this example above, the error was refering to my `RenameVitaminsToSupplements` file where I had initially changed the attribute name of vitamins to supplements. Since I had already previously removed the supplements attribute from the table in Step 3, I had to delete this `RenameVitaminsToSupplements` file due to old attributes. This solved my terminal error.
 
-7. For traceback errors in the terminal: 
+` For traceback errors in the terminal: `
          * You may still have old attributes that you are no longer using somewhere in an existing file. Double check that you have deleted any old migrate rename files in your database folder where you no longer have those attributes you had initially renamed. If this is the case, delete that file. 
          * Double check that you have changed the name of your model/controller if you were replacing the name of a table.
 
 
 ### Rails Associations
 
-I suggest that you give yourself a few days to read and take notes on the [Active Record Associations documentation](https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association)  and take the time to fully comprehend the 6 different types of Rails associations and know how they are used. After understanding the fundamentals, now be confident when you choose what models relationships you will create from your tables. Make sure to print out or copy and paste all the rails project requirements in a seperate google doc so that you can easily refer back to it when making decisions for how to carry out your project. Another helpful tool that I used throughout this app build was the Quiver app. It's a notetaking app that stores all your code and text based on whatever coding language (has over 120 languages) you are working with. I downloaded Quiver on my Mac in the app store. It is one of the best $10 investments I have made. Using the Quiver app made it easy to refer back to all my Ruby on rails notes from this module. 
+I suggest that you give yourself a few days to read and take notes on the [Active Record Associations documentation](https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association)  and take the time to fully comprehend the 6 different types of Rails associations and know how they are used. After understanding the fundamentals, now be confident when you choose what models relationships you will create from your tables. Make sure to print out or copy and paste all the rails project requirements in a seperate google doc so that you can easily refer back to it when making decisions for how to carry out your project. Another helpful tool that I used throughout this app build was the Mac [Quiver app](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894?mt=12). It's a notetaking app that stores all your code and text based on whatever coding language (has over 120 languages) you are working with. I downloaded Quiver on my Mac in the app store. It is one of the best $10 investments I have made. Using the Quiver app made it easy to refer back to all my Ruby on rails notes from this module. 
 
 Here are all my model associations I created for each class. 
 
