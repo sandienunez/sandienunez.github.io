@@ -361,9 +361,10 @@ A user can create, edit and delete comments they make on tasks they made or task
 10. Clean and concise code, does not always mean better code. Make sure that if you are refactoring to reduce the quantity of code, that your methods can still be executed and that your overall app flow and routes are still functioning.
 
 ## Partials 
-If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both views: 
+If it is appropriate to refactor, place the repeating code in a partial file in the respective folder in views. Partials are always labeled with an underscore at the beginning of the file. For example, my form partial created to reduce the repetitive code found in my comments edit and new views was named `_forms.html.erb` in the respective comments folder. This was the repeating code found in both my comments views: 
 
-```  <% if !@comment.task %>
+```
+  <% if !@comment.task %>
     <%= f.label :task_name %>
      <%= f.collection_select :task_id, Task.all, :id, :task_name %>
      <% else %>
@@ -371,32 +372,34 @@ If it is appropriate to refactor, place the repeating code in a partial file in 
     <% end %>
 <br>
 <br>
-
      <%= f.label :message %>
      <%= f.text_area :message %>
 <br>
 <br>
 
     <%= f.submit "Save" %>
-		```
+```
 		
-		And this is how I referenced the partial in my comments edit view: 
+And this is how I referenced the partial in my comments edit view: 
 		
-		```<h2> Edit Comment. </h2>
+```
+		<h2> Edit Comment. </h2>
 		
 		<%= form_for(@comment) do |f| %>
      <%= render partial: 'comments/form', locals: {f: f} %>
-<% end %>```
+<% end %>
+
+```
 
 My partial in my comments new view: 
-```<h2> Create a Comment. </h2>
+
+```
+<h2> Create a Comment. </h2>
 
 <%= form_for @comment do |f| %>
      <%= render partial: 'comments/form', locals: {f: f} %>
 <% end %>
 ```
-
-
 
 ## In the Future
 
@@ -405,13 +408,13 @@ In the next month, I hope to deploy tasky on Heroku, a free hosting site for web
 ## Shoutouts
 I want to thank my incredible family, including my wonderful parents and amazing sisters who supported me during this entire project build. They were amazing beta testers for my app and gave me incredibly useful advice in regards to design, product scale, marketing and user functionality. My family deserves a tony, grammy and an oscar for all the delicious meals they cooked for me, endless hugs, love and words of encouragement they showered on me. It would not have been possible without all of their help. They gave me the inspiration to keep pushing until the end and dared me to go above and beyond for this app.
 
-A huge thanks to my cohort lead, Dominique, and my supportive classmates and the Flatiron School community of students who helped me endlessly debug my errors and answer my countless questions until I understood the concepts. 
+A huge thanks to my cohort lead, Dominique, and my supportive classmates and the Flatiron School community of students. They helped me endlessly debug my errors and answer my countless questions until I understood the concepts. 
 
 I am indebted to God's grace as He sustained me with his love, strength and heart during this entire journey. He led me beside still waters and casted away all my fears during this project. I am SO grateful for you Lord!
 
 ## Takeaways
  > Overall, this Rails application challenged me, pushed me farther then my limits and helped me grow as a software developer. 
- It also made me fall more in love with the flexible nature of Ruby and how magical the world of Rails is. I am very proud of this project and hope that many people struggling with ADD can utilize all the powerful tasky features to help them dominate their day. 
+  > It also made me fall more in love with the flexible nature of Ruby and how magical the world of Rails is. I am very proud of this project and hope that many people struggling with ADD can utilize all the powerful tasky features to help them dominate their day. 
 
 
 
