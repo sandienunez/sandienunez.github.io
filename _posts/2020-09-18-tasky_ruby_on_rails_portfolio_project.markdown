@@ -130,8 +130,8 @@ After studying the assocations and understanding the overall flow of my tasky ap
 ![Screen Shot 2020-09-18 at 12 53 30 PM](https://user-images.githubusercontent.com/61069416/93635796-e63cc200-f9c0-11ea-8249-f5e93353729e.png)
 
 ## Restful Routes and CRUD Actions
+What exactly is REST? And why is it important? REST stands for Representation State Transfer. It is a set of conventions for structuring our routes and mapping them to CRUD action methods (Create, Read, Update, Delete). Below are all the Rest and CRUD actions found in my Task model. 
 
-REST => Representation State Transfer => set of conventions for structuring our ROUTES and mapping them to CRUD actions (Create, Read, Update, Delete).
 
   | METHOD | ROUTE | CONTROLLER ACTION   | Description |
 | ------------- |-------------| ----------- | ------------------- |
@@ -146,14 +146,20 @@ REST => Representation State Transfer => set of conventions for structuring our 
 ## Coding
 
 
-Three importants components of code to keep in mind when working with this framework is **Models, Controllers and Views**. The Model holds all your data and is responsible for the database. It is similar to a chef in a restaurant. The Model chef knows how many meals to make and know how to make a burger. The ActiveRecord framework gives us access to many methods outside of the rails framework. Your models should hold all your associations, custom methods and the be more thick than the controllers. The Controller is responsible for holding all the logic, web requests and holds all the action methods. The controller is like a waiter is needs to remember that it was table 7 that ordered the burger request. The Views are the presentation of your templates and what the app visually looks like to the user. It is responsible for HTML styling and can render partials (explained below in Partials section). 
+There are three essential components of code to keep in mind when working with this framework are:
 
-The three main parts of the **Rails framework** are as follows:
+* Models
+* Controllers
+* Views
+
+The** Model** holds all your data and is responsible for the database. It is similar to a chef in a restaurant. The Model chef knows how many meals to make and know how to make a burger. The ActiveRecord framework gives us access to many methods outside of the rails framework. Your models should hold all your associations, custom methods and the be more thick than the controllers. The** Controller** is responsible for holding all the logic, web requests and holds all the action methods. The controller is like a waiter is needs to remember that it was table 7 that ordered the burger request. The **Views**  are the presentation of your templates and what the app visually looks like to the user. It is responsible for HTML styling and can render partials (explained below in Partials section).  
+
+The three main parts of the **Rails framework** are:
 * ActiveRecord
 * ActionController
-* ActionView = Made up of URL helpers
+* ActionView = Which are made up of URL helpers
       
-An example of dynamic URL helpers are the route helper methods. If we were to change up the routes, in many cases our code would not have to be altered at all because the route helpers are methods and not strings. Although, they cannot be used in our models. Below are some examples of how route helpers can be easy to read, very clean and simple code to add to our controllers and views. 
+An example of dynamic URL helpers are the** route helper methods**. If we were to change up the routes, in many cases our code would not have to be altered at all because the route helpers are methods and not strings. Although, they cannot be used directly in our models. Below are some examples of how route helpers can be easy to read, very clean and simple code that we can add to our controllers and views. 
 	
 ```
 task_path(@task)
@@ -162,10 +168,7 @@ or
 						 
 task_path(task, opt_in: true)
 ```
-            
-						
-						
-						
+
 						
 ### Request and Response Flow
 ![Screen Shot 2020-09-18 at 4 13 15 PM](https://user-images.githubusercontent.com/61069416/93641230-f0af8980-f9c9-11ea-8152-2d2957820d79.png)
