@@ -462,7 +462,7 @@ A user can create, edit and delete the comments they've posted on their tasks. T
 ## 10 Helpful Tips
 
 1. Each day I made multiple to-do lists that included goals that covered what exactly I needed to tackle that day. Including specific errors I needed to debug or questions I needed to ask my cohort lead and classmates. Every time I finished a task, I crossed it out. This helped me visually see all that I had left to accomplish.
-2. Make multiple users, don't just use one to test out your project. Doing this, helped me identify various bugs, errors issues that were displayed from user to user in my views. 
+2. Make multiple users, don't just use one to test out your project. Doing this, helped me identify various bugs, errors and issues that were displayed from user to user in my views. 
 3. Keep it simple, then create more models and attributes later. Focus on meeting the requirements first.
 4. Save the styling until last. It can be tempting to spend time making your app look beautiful and internet worthy but it's not a helpful move if you are still degugging errors and completing the requirements. 
 5. Make sure your user can create, edit, update and delete objects on each of your paths without a problem. Make sure all of your buttons are properly functioning.
