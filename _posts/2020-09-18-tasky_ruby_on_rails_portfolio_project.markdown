@@ -130,7 +130,7 @@ After studying the assocations and understanding the overall flow of my tasky ap
 ![Screen Shot 2020-09-18 at 12 53 30 PM](https://user-images.githubusercontent.com/61069416/93635796-e63cc200-f9c0-11ea-8249-f5e93353729e.png)
 
 ## Restful Routes and CRUD Actions
-What exactly is REST? And why is it important? REST stands for Representation State Transfer. It is a set of conventions for structuring our routes and mapping them to CRUD action methods (Create, Read, Update, Delete). Below are all the Rest and CRUD actions found in my Task model. 
+What exactly is REST? And why is it important? REST stands for Representation State Transfer. It is a set of conventions for structuring our routes and mapping them to CRUD action methods (Create, Read, Update, Delete). They are needed because without the CRUD action methods, our app would not be able to receive the get requests and send them to the corresponding action method names and link them to render our matching view names. Below are all the Rest and CRUD actions found in my Task model. 
 
 
   | METHOD | ROUTE | CONTROLLER ACTION   | Description |
