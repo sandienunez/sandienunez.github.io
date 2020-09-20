@@ -146,7 +146,7 @@ What exactly is REST? And why is it important? REST stands for Representation St
 ## Coding
 
 
-There are **three essential components of code** to keep in mind when working with this Rails framework are:
+The **three essential components of code** to keep in mind when working with Rails framework are:
 
 * Models
 * Controllers
