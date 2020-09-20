@@ -187,8 +187,8 @@ Here are some helpful notes to keep in mind with understanding GET and POST requ
 * **GET Request** = when your browser is asking for info
 
 *  **POST Request** = when browser is giving info
-        —>  I give you post request form data (ex: submitting a form) because it takes all the stuff you type in 
-        —> And it sends form to web server 
+*         —>  I give you post request form data (ex: submitting a form) because it takes all the stuff you type in 
+*         —> And it sends form to web server 
 				
 If for instance, I have added a new user action in my users controller, when I hit enter the browser will make a request to the rails app. 
 ```
@@ -199,8 +199,8 @@ The rails app then goes to the routes file and asks two questions:
 
   1. Should I respond to that URL?
   2. If so what method should I call in what controller?
-         —> It's gonna say URL for register route 
-				  —> And yes you should call new method in Users controller 
+*          —> It's gonna say URL for register route 
+* 			   —> And yes you should call new method in Users controller 
 
 
 **4 Steps for Request Cycle:**
