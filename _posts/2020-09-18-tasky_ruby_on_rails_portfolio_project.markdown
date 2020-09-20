@@ -146,7 +146,7 @@ What exactly is REST? And why is it important? REST stands for Representation St
 ## Coding
 
 
-There are three essential components of code to keep in mind when working with this framework are:
+There are **three essential components of code** to keep in mind when working with this Rails framework are:
 
 * Models
 * Controllers
@@ -154,7 +154,7 @@ There are three essential components of code to keep in mind when working with t
 
 The** Model** holds all your data and is responsible for the database. It is similar to a chef in a restaurant. The Model chef knows how many meals to make and know how to make a burger. The ActiveRecord framework gives us access to many methods outside of the rails framework. Your models should hold all your associations, custom methods and the be more thick than the controllers. The** Controller** is responsible for holding all the logic, web requests and holds all the action methods. The controller is like a waiter is needs to remember that it was table 7 that ordered the burger request. The **Views**  are the presentation of your templates and what the app visually looks like to the user. It is responsible for HTML styling and can render partials (explained below in Partials section).  
 
-The three main parts of the **Rails framework** are:
+The **three main parts** of the Rails framework are:
 * ActiveRecord
 * ActionController
 * ActionView = Which are made up of URL helpers
