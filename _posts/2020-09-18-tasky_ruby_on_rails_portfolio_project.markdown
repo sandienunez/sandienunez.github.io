@@ -159,7 +159,7 @@ The **three main parts** of the Rails framework are:
 * ActionController
 * ActionView = Which are made up of URL helpers
       
-An example of dynamic URL helpers are the** route helper methods**. If we were to change up the routes, in many cases our code would not have to be altered at all because the route helpers are methods and not strings. Although, they cannot be used directly in our models. Below are some examples of how route helpers can be easy to read, very clean and simple code that we can add to our controllers and views. 
+An example of dynamic URL helpers are the **route helper methods**. If we were to change up the routes, in many cases our code would not have to be altered at all because the route helpers are methods and not strings. Although, they cannot be used directly in our models. Below are some examples of how route helpers can be easy to read, very clean and simple code that we can add to our controllers and views. 
 	
 ```
 task_path(@task)
