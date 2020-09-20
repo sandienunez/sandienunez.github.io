@@ -164,7 +164,7 @@ An example of dynamic URL helpers are the **route helper methods**. If we were t
 ```
 task_path(@task)
 						 
-or
+#or
 						 
 task_path(task, opt_in: true)
 ```
