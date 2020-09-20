@@ -263,10 +263,10 @@ end
 
 ### Scope Method Adventures
 
-We were asked to create a custom scope method for this project. More specifically we needed a:
+We were asked to create a custom **scope method** for this project. More specifically we needed a:
 * Class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
 
-This was my favorite part of this project because it challenged me to think outside of the box and build something that was unique to tasky. It also served as an important feature that many tasky users will utilize on a daily basis so I wanted to make sure I did my research and fully understood how to use this amazing custom rails method. A scope method is a custom class method that gives you back active record associations or queries and helps make your code more dry. It also helps with organization and efficiency, since scope methods are chainable. When we call on a scope, ActiveRecord::Relation objects are returned not an array of elements. They can also receive parameters. Scopes are placed in the model and called on in the action method in your controller.
+This was my favorite part of this project because it challenged me to think outside of the box and build something that was unique to tasky. It also served as an important feature that many tasky users will utilize on a daily basis so I wanted to make sure I did my research and fully understood how to use this amazing custom rails method. A scope method is a custom class method that gives you back active record associations or queries and helps make your code more dry. It also helps with organization and efficiency, since scope methods are chainable. When we call on a scope, **ActiveRecord::Relation objects** are returned not an array of elements. They can also receive parameters. Scopes are placed in the model and called on in the action method in your controller.
 
 I created a scope method called `priority_order` that used the Active Record `order` method to sort all my tasks on a descending scale from 1-6. A user can rank their Daily Tasks from Highest to Lowest Priority. Where 6 is the highest priority and 1 is the lowest priority. 
 
