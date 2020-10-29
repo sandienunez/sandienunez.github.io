@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Making new Github repositories using “main” as the default branch"
-date:       2020-10-29 23:32:14 +0000
+title:      "How to Create New Github repositories: Using “main” as the Default Branch"
+date:       2020-10-29 19:32:15 -0400
 permalink:  making_new_github_repositories_using_main_as_the_default_branch
 ---
 
@@ -16,7 +16,7 @@ As I started creating my new portfolio project for my Rails and Javascript proje
 ## Renaming the default branch name of your repository with “main.”
 
 
-![Screen Shot 2020-10-27 at 10 24 07 AM](https://user-images.githubusercontent.com/61069416/97641973-80f5db00-1a1a-11eb-88cc-e5db436d562d.png)
+![Screen Shot 2020-10-27 at 10 31 16 AM](https://user-images.githubusercontent.com/61069416/97643324-bc45d900-1a1d-11eb-8391-89db81fed610.png)
 
 The image below shows you what you should get back after the last command. 
 ![Screen Shot 2020-10-27 at 10 26 11 AM](https://user-images.githubusercontent.com/61069416/97642414-70923000-1a1b-11eb-9ebc-898e2d3a13a7.png)
