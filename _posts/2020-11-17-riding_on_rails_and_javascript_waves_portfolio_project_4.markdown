@@ -124,7 +124,7 @@ My biggest challenge arised when building out my select option drop down in my i
 Here are the steps that helped me debug and get back an actual string of data:
 
 ```
- 1. First make sure you run rails:db:seed just in case your data was wiped. This happened to me many times throughout the project when I had previously changed attribute names or dropped tables. 
+ 1. First make sure you run 'rake db:seed' just in case your data was wiped. This happened to me many times throughout the project when I had previously changed attribute names or dropped tables. 
  2.  Call your object, call save on your object if you are using .new active record method
  
 [1] pry(#<ListingsController>)> listing
