@@ -8,9 +8,9 @@ permalink:  riding_on_rails_and_javascript_waves_portfolio_project_4
 ![homehero](https://user-images.githubusercontent.com/61069416/99468969-ce75b180-290f-11eb-9088-759dd7545bcf.png)
 ## Planning Stages 
 
-During the planning process for my Rails back-end and JavaScript front-end project I was overwhelmed. I did not know where to begin! I took the advice of my cohort lead and focused on building solid model relationships, mapping out my tables, attributes and controllers. I took a few days to sort out which has_many and belongs_to relationship I was going to pair with which model. I also learned how to build code vertically in order to reduce bugs and errors. This means do not build out all of your tables, attributes and files one right after the other but instead focus on building out one action method, one model relationship, make one fetch request and get back one JavaScript object in the console. This proved to be extremely effective and helped me realize that my project did not need the extra relationships and tables that I had originally planned out. 
+During the planning process for my Rails back-end and JavaScript front-end project I was overwhelmed. I did not know where to begin! I took the advice of my cohort lead and focused on building solid model relationships, mapping out my tables, attributes and controllers. I took a few days to sort out which has_many and belongs_to relationship I was going to pair with which model. I also learned how to build code "vertically" in order to reduce bugs and errors. This means do not build out all of your tables, attributes and files one right after the other but instead focus on building out one action method, one model relationship, make one fetch request and get back one JavaScript object in the console. This proved to be extremely effective and helped me realize that my project did not need the extra relationships and tables that I had originally planned out. 
 
-Below were my original models for the project before I utilized the coding vertically strategy.
+Below were my original models for the project before I implemented the coding "vertically" strategy.
 ```
   
 class Business
