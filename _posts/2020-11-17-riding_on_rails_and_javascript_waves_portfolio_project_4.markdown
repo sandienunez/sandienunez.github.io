@@ -139,7 +139,7 @@ Here are the steps that helped me debug and get back an actual string of data:
 [2] pry(#<ListingsController>)> listing.save
 => false
 
-3. Call your errors on your object,
+3. Call errors on your object
 [3] pry(#<ListingsController>)> listing.errors
 => #<ActiveModel::Errors:0x00007fd9691c3460
  @base=
