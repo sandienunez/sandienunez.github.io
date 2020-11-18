@@ -24,8 +24,8 @@ Class Listing
 end
   
 class HomeService
-    has_many listings
-    has_many businesses, through: listings 
+    has_many :listings
+    has_many :businesses, through: listings 
 end 
 
 ```
@@ -39,7 +39,7 @@ Class Listing
 end 
   
 class HomeService
-    has_many listings
+    has_many :listings
 end 
 ```
 ## App Idea
