@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Riding on Rails and JavaScript Waves: Portfolio Project 4"
-date:       2020-11-18 02:24:12 +0000
+date:       2020-11-17 21:24:13 -0500
 permalink:  riding_on_rails_and_javascript_waves_portfolio_project_4
 ---
 
