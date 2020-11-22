@@ -111,7 +111,7 @@ The two types of JS Objects include the Primitives and the Complex Type of objec
 2. Take walks when you having been stuck on an error in order to come back refreshed and ready to finish!
 3. Don't be shy to reach out to other classmates/ coders and start debugging zooms! I reached out to many of my classmates this time around and it really helped increase my debugging skills since you can learn so much from others then coding alone!
 4. Don't try to over build, first make sure you have a functioning project that meets all the requirements before you go ahead and keep adding more styling or buttons. Think simple and then you can build off of your foundation!
-5. Stay hopeful and keep a positive attitude. The greatest lesson I learned this time around was the power of the word "yet." I adopted a growth mindset, where I believe that as a student my abilities can only grow. And that I don't now how to do that yet but soon I will was the mentality I had during this project build.
+5. Stay hopeful and keep a positive attitude. The greatest lesson I learned this time around was the power of the word "yet." I adopted a growth mindset, where I believe that as a student my abilities can only grow. And saying to myself, "I don't know how to do that yet but soon I will know" was the mentality I had during this project build.
 6. Take the time to use mozilla documentation in order to boost your knowledge on how to use JavaScript methods or fetch requests.
 7. Pray, pray and pray! Jesus always knows what you need and only He can give you rest!
 8. Make sure you get enough sleep, exercise and a healthy diet. It's easy to neglect lifestyle habits when we are coding but it will be to our benefit.
