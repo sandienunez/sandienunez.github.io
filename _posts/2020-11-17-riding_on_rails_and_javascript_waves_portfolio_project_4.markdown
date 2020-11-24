@@ -30,7 +30,7 @@ end
 
 ```
 
-Here is my final models after coding vertically. This meets the many to many relationship project requirements.
+Here is my final models after coding vertically. This meets the one has_ many relationship project requirement.
 
 ```
   
