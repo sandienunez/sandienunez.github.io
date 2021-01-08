@@ -6,7 +6,7 @@ permalink:  tasky_ruby_on_rails_portfolio_project
 ---
 
 
-![taskylogo](https://user-images.githubusercontent.com/61069416/93532739-94882f00-f90f-11ea-91a3-932ca8595d23.png)
+![IMG_8043](https://user-images.githubusercontent.com/61069416/99155986-251e8980-268b-11eb-971d-3d2c2069901a.jpeg)
 
 ![tasky2](https://user-images.githubusercontent.com/61069416/93535003-1e39fb80-f914-11ea-8e65-522a3f3fd8f9.png)
 ## Idea for App
@@ -86,6 +86,7 @@ In this example above, the error was refering to my `RenameVitaminsToSupplements
 
 * You may still have old attributes that you are no longer using somewhere in an existing file. Double check that you have deleted any old migrate rename files in your database folder where you no longer have those attributes you had initially renamed. If this is the case, delete that file. 
 * Double check that you have changed the name of your model/controller if you were replacing the name of a table.
+* Triple check all your time stamp original database files in your migrate folder and make sure they have the new names reflected for your new model/controller names you changed!!!
 
 
 ### Rails Associations
