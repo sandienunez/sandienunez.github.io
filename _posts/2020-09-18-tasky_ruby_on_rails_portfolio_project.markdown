@@ -6,7 +6,7 @@ permalink:  tasky_ruby_on_rails_portfolio_project
 ---
 
 
-![IMG_8043](https://user-images.githubusercontent.com/61069416/99155986-251e8980-268b-11eb-971d-3d2c2069901a.jpeg)
+![taskylogo](https://user-images.githubusercontent.com/61069416/93532739-94882f00-f90f-11ea-91a3-932ca8595d23.png)
 
 ![tasky2](https://user-images.githubusercontent.com/61069416/93535003-1e39fb80-f914-11ea-8e65-522a3f3fd8f9.png)
 ## Idea for App
