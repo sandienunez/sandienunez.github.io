@@ -39,7 +39,7 @@ Here are my backend routes for this project:
 
 
 ![Screen Shot 2021-01-24 at 9 29 14 PM](https://user-images.githubusercontent.com/61069416/105654089-4a015b00-5e8b-11eb-87c7-c0773f2cf9eb.png)
-![Screen Shot 2021-01-24 at 9 29 23 PM](https://user-images.githubusercontent.com/61069416/105654092-4b328800-5e8b-11eb-880a-3f0e479b5eeb.png")
+![Screen Shot 2021-01-24 at 9 29 23 PM](https://user-images.githubusercontent.com/61069416/105655128-77e79f00-5e8d-11eb-92a7-8a4b825f5c62.png)
 
 
 ## App Idea
