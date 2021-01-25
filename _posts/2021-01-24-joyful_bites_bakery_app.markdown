@@ -1,10 +1,11 @@
 ---
 layout: post
-title:      "Joyful Bites Bakery app"
-date:       2021-01-25 02:41:59 +0000
+title:      "React-Redux Flatiron Portfolio Final Project- Joyful Bites Bakery"
+date:       2021-01-24 21:42:00 -0500
 permalink:  joyful_bites_bakery_app
 ---
 
+## Joyful Bites Bakery app
 
 ![JBlogo](https://user-images.githubusercontent.com/61069416/105647206-fafafc00-5e71-11eb-8257-5ee6ee037da8.jpg)
 
@@ -77,6 +78,8 @@ The most difficult part of coding this application was having the data attribute
 ## Shoutouts 
 
 Firstly, I want to give thanks to my Almighty and Heavenly Father, Jesus. He really uplifted me throughout this project build and supported me when I wanted to give up or could not find a solution. I love you Jesus, thank you dad! I would not have gotten to this point without the powerful prayers of my family and friends. I am so thankful to my family for helping me get to the finish line. They encouraged me when I was stuck by rubber ducking with me and listening to my thought processing while I was talking out my coding errors. I am also grateful to my classmates and cohort lead for the endless support through this incredibly difficult but rewarding journey to my final portfolio project. Thank you Flatiron Coding School for an unforgettable journey and solid education you have provided me. 
+
+
 
 
 
