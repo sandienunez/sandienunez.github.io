@@ -44,32 +44,50 @@ Here are my backend routes for this project:
 
 ## App Idea
 
-My objective was to create an incredibly healthy, sustainable and whole bakery with treats that make people feel good. As a person who has suffered from dairy and gluten allergies, I know first hand the difficulty of finding delicious desserts that do not make you feel sick, sluggish, bad about yourself, tired and leave you with an awful sugar crash. When my father was diagnosed with pre-diabetes and extra high cholesterol, I set out on a mission to create the most delicious baked goods that are not only nutritious, dairy-free, gluten-free , anti-inflammatory and low-glycemic but give you the energy you need to do the work God has called you to do.
+My objective was to create an incredibly healthy, sustainable and whole bakery with treats that make people feel good. As a person who has suffered from dairy and gluten allergies, I know first hand the difficulty of finding delicious desserts that do not make you feel sick, sluggish, bad about yourself, tired and leave you with an awful sugar crash. When my father was diagnosed with pre-diabetes and extra high cholesterol, I set out on a mission to create the most delicious baked goods that are not only nutritious, dairy-free, gluten-free, anti-inflammatory and low-glycemic but give you the energy you need to do the work God has called you to do.
 
 You do not have to sacrifice "yummy-in-my-tummy" moments or give up your sweet tooth cravings. Everyone deserves the right to enjoy treats, cookies, cakes, fresh-made breads and desserts. Baked goods are meant to make you smile, meant to be shared with the special people in our lives and help make our family/friend celebrations sweeter. Joyful Bites encompasses what America's heart is a lot about, helping your neighbor and serving others. That's why for every one treat you buy, one is given to someone in need.
 
 The Joyful Bites Bakery app is a single-page application that serves two main purposes: Clients can both create and save bakery orders, as well as delete orders previously made and view all the client summaries or list order objects. Clients can also visit 8 different routes including clicking to read the bakery menu items for the day, about us, our story, contact information and see all of the orders made in the Joyful Bites Community Order Feed on each route rendered in the parent App component.
 
 ## Restful Routes and CRUD Actions
-What exactly is REST? And why is it important? REST stands for Representation State Transfer. It is a set of conventions for structuring our routes and mapping them to CRUD action methods (Create, Read, Update, Delete). They are needed because without the CRUD action methods, our app would not be able to receive the get requests and send them to the corresponding action method names as they are fetched to the API. Below are all the Rest and CRUD actions found in my Listing model. In the future, I plan to build out the edit and update methods for the user to be able to go back and edit their bakery order form they originally submitted.
+What exactly is REST? And why is it important? REST stands for Representation State Transfer. It is a set of conventions for structuring our routes and mapping them to CRUD action methods (Create, Read, Update, Delete). They are needed because without the CRUD action methods, our app would not be able to receive the get requests and send them to the corresponding action method names as they are fetched to the API. Below are all the Rest and CRUD actions found in my List model. In the future, I plan to build out the edit and update methods for the user to be able to go back and edit their bakery order form they originally submitted.
 
 
   | METHOD | ROUTE | CONTROLLER ACTION   | Description |
 | ------------- |-------------| ----------- | ------------------- |
-| GET  |  /lists | #index | Show all listings | 
-| POST | /lists | #create | Create a new listing
-| GET  | /lists/new | #new | Render form for creating a new listing|
-| GET  | /lists/:id/edit | #edit | Render form for editing a listing  |
-| GET  | /lists/:id | #show | Show a single listing |
-| PATCH | /lists/:id | #update | Update a listing |
-| DELETE | /lists/:id | #destroy | DELETE a listing |
+| GET  |  /lists | #index | Show all lists | 
+| POST | /lists | #create | Create a new lists
+| GET  | /lists/new | #new | Render form for creating a new lists|
+| GET  | /lists/:id/edit | #edit | Render form for editing a lists |
+| GET  | /lists/:id | #show | Show a single lists |
+| PATCH | /lists/:id | #update | Update a lists |
+| DELETE | /lists/:id | #destroy | DELETE a lists |
 
 ## Lifecycle Methods in React
 
 This project covered some amazing concepts that are fundamental to React. First remember that there are 3 Phases when we talk about Lifecycle methods that include:
-1. Mounting = 
-2. Updating = 
-3. Unmounting = 
+1. **Mounting** = when Component is added to DOM
+* DOM creation or  "setup" phase
+* componentDidMount is only called once, but immediately after the render() method has taken place
+* the HTML for the React component has been rendered into the DOM 
+* This method is used to perform any DOM manipulation of data-fetching the component might need
+* In React, this is where you would set up any long-running processes you want to use in your component, for example fetching data
+
+2. **Updating** = An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+
+* static getDerivedStateFromProps()
+* shouldComponentUpdate()
+* render()
+* getSnapshotBeforeUpdate()
+* componentDidUpdate()
+
+
+3. **Unmounting** = when Component is removed from DOM
+
+* deletion, or "cleanup" phase
+* one lifecycle method: componentWillUnmount
+*  componentWillUnmount is the last function to be called immediately before the component is removed from the DOM It is generally used to perform clean-up for any DOM-elements or timers created in componentWillMount. For a React component, this is where you would clean up any of those long running processes that you set up in componentDidMount.
 
 Each has certain methods/functions called before, after or during the phase. Soon, something called "Context API" could replace Redux. 
 
