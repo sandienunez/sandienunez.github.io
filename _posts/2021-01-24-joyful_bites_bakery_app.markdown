@@ -9,7 +9,7 @@ permalink:  joyful_bites_bakery_app
 
 ![JBlogo](https://user-images.githubusercontent.com/61069416/105647206-fafafc00-5e71-11eb-8257-5ee6ee037da8.jpg)
 
-The point of this application is to help customers find a safe healthy haven for their sweet tooth! The Joyful Bites Bakery app allows you to easily view all the dessert items currently available on the menu tab, create a bakery order for your favorite cookie, view all the orders created in the Joyful Bites community nationwide, read about our bakery’s mission and check out our story page. 
+Joyful Bites Bakery app customers find a safe healthy haven for their sweet tooth! It allows you to easily view all the dessert items currently available on the menu tab, create a bakery order for your favorite cookie, view all the orders created in the Joyful Bites community nationwide, read about our bakery’s mission and check out our story page. 
 
 ## Planning Stages 
 
@@ -45,7 +45,9 @@ Here are my backend routes for this project:
 ## App Idea
 
 My objective was to create an incredibly healthy, sustainable and whole bakery with treats that make people feel good. As a person who has suffered from dairy and gluten allergies, I know first hand the difficulty of finding delicious desserts that do not make you feel sick, sluggish, bad about yourself, tired and leave you with an awful sugar crash. When my father was diagnosed with pre-diabetes and extra high cholesterol, I set out on a mission to create the most delicious baked goods that are not only nutritious, dairy-free, gluten-free , anti-inflammatory and low-glycemic but give you the energy you need to do the work God has called you to do.
+
 You do not have to sacrifice "yummy-in-my-tummy" moments or give up your sweet tooth cravings. Everyone deserves the right to enjoy treats, cookies, cakes, fresh-made breads and desserts. Baked goods are meant to make you smile, meant to be shared with the special people in our lives and help make our family/friend celebrations sweeter. Joyful Bites encompasses what America's heart is a lot about, helping your neighbor and serving others. That's why for every one treat you buy, one is given to someone in need.
+
 The Joyful Bites Bakery app is a single-page application that serves two main purposes: Clients can both create and save bakery orders, as well as delete orders previously made and view all the client summaries or list order objects. Clients can also visit 8 different routes including clicking to read the bakery menu items for the day, about us, our story, contact information and see all of the orders made in the Joyful Bites Community Order Feed on each route rendered in the parent App component.
 
 ## Restful Routes and CRUD Actions
@@ -69,7 +71,7 @@ This project covered some amazing concepts that are fundamental to React. First 
 2. Updating = 
 3. Unmounting = 
 
-Each has certain methods/functions called before, after or during the phase.Soon, something called "Context API" could replace Redux. 
+Each has certain methods/functions called before, after or during the phase. Soon, something called "Context API" could replace Redux. 
 
 ## Coding
 
