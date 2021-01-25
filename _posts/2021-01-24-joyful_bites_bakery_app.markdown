@@ -66,7 +66,8 @@ What exactly is REST? And why is it important? REST stands for Representation St
 
 ## Lifecycle Methods in React
 
-![Screen Shot 2021-01-24 at 9 29 23 PM](https://user-images.githubusercontent.com/61069416/105655128-77e79f00-5e8d-11eb-92a7-8a4b825f5c62.png)
+![Screen-Shot-2019-10-09-at-11 43 05-AM-970x367](https://user-images.githubusercontent.com/61069416/105657759-1f1b0500-5e93-11eb-94fd-8ef2c3dffb5b.png)
+
 
 This project covered some amazing concepts that are fundamental to React. There are 3 Phases when we talk about Lifecycle methods that include:
 
