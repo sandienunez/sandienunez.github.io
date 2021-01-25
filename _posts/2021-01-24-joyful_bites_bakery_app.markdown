@@ -74,6 +74,11 @@ This project covered some amazing concepts that are fundamental to React. There 
 * the HTML for the React component has been rendered into the DOM 
 * This method is used to perform any DOM manipulation of data-fetching the component might need
 * In React, this is where you would set up any long-running processes you want to use in your component, for example fetching data
+ ```
+ componentDidMount() {
+  this.interval = setInterval(this.fetchWeather, 15000);
+}
+ ```
 
 2. **Updating** = An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
 
@@ -89,6 +94,12 @@ This project covered some amazing concepts that are fundamental to React. There 
 * deletion, or "cleanup" phase
 * one lifecycle method: componentWillUnmount
 *  componentWillUnmount is the last function to be called immediately before the component is removed from the DOM It is generally used to perform clean-up for any DOM-elements or timers created in componentWillMount. For a React component, this is where you would clean up any of those long running processes that you set up in componentDidMount.
+
+```
+componentWillUnmount() {
+  clearInterval(this.interval);
+}
+```
 
 Each has certain methods/functions called before, after or during the phase. Soon, something called "Context API" could replace Redux. 
 
