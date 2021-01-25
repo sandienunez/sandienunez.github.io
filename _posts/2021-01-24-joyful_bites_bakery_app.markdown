@@ -77,6 +77,8 @@ This project covered some amazing concepts that are fundamental to React. There 
 * the HTML for the React component has been rendered into the DOM 
 * This method is used to perform any DOM manipulation of data-fetching the component might need
 * In React, this is where you would set up any long-running processes you want to use in your component, for example fetching data
+
+
  ```
  componentDidMount() {
   this.interval = setInterval(this.fetchWeather, 15000);
@@ -92,7 +94,8 @@ This project covered some amazing concepts that are fundamental to React. There 
 * componentDidUpdate()
 
 
-3. **Unmounting** = when Component is removed from DOM
+
+**3. Unmounting** = when Component is removed from DOM
 
 * deletion, or "cleanup" phase
 * one lifecycle method: componentWillUnmount
