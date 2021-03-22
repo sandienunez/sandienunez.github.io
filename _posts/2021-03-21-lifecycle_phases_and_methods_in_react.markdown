@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Lifecycle Phases and Methods in React"
-date:       2021-03-22 03:52:28 +0000
+date:       2021-03-21 23:52:28 -0400
 permalink:  lifecycle_phases_and_methods_in_react
 ---
 
